@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">DnDApp</string>
+    <string name="menu_string">D&amp;D Fifth Edition Character Helper</string>
+    <string name="action_settings">Settings</string>
+    <string name="new_button_string">New Character</string>
+    <string name="new_creature_string">New Creature</string>
+    <string name="title_activity_new_char">NewCharActivity</string>
+    <string name="new_char_banner_string">Create A New Character</string>
+    <string name="name_form_string">Name:</string>
+    <string name="class_form_string">Class: </string>
+    <string name="stat_grp_label_string">Stat Distribution:</string>
+    <string name="optimal_string">Optimal</string>
+    <string name="random_string">Random</string>
+    <string name="manual_string">Manual</string>
+    <string name="standard_array_string">Standard Array</string>
+    <string name="race_form_string">Race:</string>
+    <string name="strength_string">Strength</string>
+    <string name="dexterity_string">Dexterity</string>
+    <string name="constitution_string">Constitution</string>
+    <string name="intelligence_string">Intelligence</string>
+    <string name="wisdom_string">Wisdom</string>
+    <string name="charisma_string">Charisma</string>
+    <string name="saved_char_button_string">Saved Characters</string>
+    <string name="die_roller_string">Die Roller</string>
+    <string name="spellbook_button_string">Spell Book</string>
+    <string name="saved_creature_button_string">Saved Creatures</string>
+    <string name="clear_stat_button_string">Clear Stats</string>
+    <string name="next_page_button_string">Next Page</string>
+
+    <string-array name="class_list">
+        <item>Barbarian</item>
+        <item>Bard</item>
+        <item>Cleric</item>
+        <item>Druid</item>
+        <item>Fighter</item>
+        <item>Monk</item>
+        <item>Paladin</item>
+        <item>Ranger</item>
+        <item>Rogue</item>
+        <item>Sorcerer</item>
+        <item>Warlock</item>
+        <item>Wizard</item>
+    </string-array>
+
+    <string-array name="race_list">
+        <item>Dwarf</item>
+        <item>Elf</item>
+        <item>Halfling</item>
+        <item>Human</item>
+        <item>Dragonborn</item>
+        <item>Gnome</item>
+        <item>Half-Elf</item>
+        <item>Half-Orc</item>
+        <item>Tiefling</item>
+    </string-array>
+
+</resources>
