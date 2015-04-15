@@ -9,7 +9,7 @@
     <string name="name_form_string">Name:</string>
     <string name="class_form_string">Class: </string>
     <string name="stat_grp_label_string">Stat Distribution:</string>
-    <string name="optimal_string">Optimal</string>
+    <string name="optimal_string">Recommend</string>
     <string name="random_string">Random</string>
     <string name="manual_string">Manual</string>
     <string name="standard_array_string">Standard Array</string>
@@ -53,5 +53,20 @@
         <item>Half-Orc</item>
         <item>Tiefling</item>
     </string-array>
+    <string name="title_activity_die_roller">DieRollerActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="die_roller_banner_string">Die Roller</string>
+    <string name="roll_button_string">Roll!</string>
+    <string name="example_roll_string">Example: 1d20 will roll a single d20</string>
+    <string name="die_roller_result_string">Result:</string>
+    <string name="d4_string">1d4</string>
+    <string name="d6_string">1d6</string>
+    <string name="d8_string">1d8</string>
+    <string name="d10_string">1d10</string>
+    <string name="d12_string">1d12</string>
+    <string name="d20_string">1d20</string>
+    <string name="d100_string">1d100</string>
+    <string name="title_activity_spell_book">SpellBookActivity</string>
 
 </resources>

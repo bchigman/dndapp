@@ -25,6 +25,24 @@ public class MenuActivity extends ActionBarActivity {
             }
         });
 
+        Button dieRollerButton = (Button) findViewById(R.id.die_roller_button);
+        dieRollerButton.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuActivity.this, DieRollerActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button spellbookButton = (Button) findViewById(R.id.spellbook_button);
+        spellbookButton.setOnClickListener( new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuActivity.this, SpellBookActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 

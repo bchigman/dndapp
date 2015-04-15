@@ -20,6 +20,14 @@
             android:name=".NewCharActivity"
             android:label="@string/title_activity_new_char" >
         </activity>
+        <activity
+            android:name=".DieRollerActivity"
+            android:label="@string/title_activity_die_roller" >
+        </activity>
+        <activity
+            android:name=".SpellBookActivity"
+            android:label="@string/title_activity_spell_book" >
+        </activity>
     </application>
 
 </manifest>
