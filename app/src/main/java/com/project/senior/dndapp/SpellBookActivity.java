@@ -6,12 +6,9 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
-
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.InputStreamReader;
 import java.util.List;
 
@@ -29,7 +26,7 @@ public class SpellBookActivity extends ActionBarActivity {
             Gson gson = new Gson();
             List<Spell> spells = gson.fromJson(reader, new TypeToken<List<Spell>>(){}.getType());
             TextView spellbookText = (TextView) findViewById(R.id.spellbook_text);
-            spellbookText.setText(spells.toString());
+            spellbookText.setText(spells.toString() + spells.size());
         }catch (Exception e){
             e.printStackTrace(System.err);
         }
