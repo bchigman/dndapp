@@ -3,6 +3,7 @@ package com.project.senior.dndapp;
 import java.util.ArrayList;
 
 /**
+ * Player Character class
  * Created by Ben on 4/2/2015.
  */
 public class Character {
@@ -11,12 +12,14 @@ public class Character {
     private String race;
     private PlayerClass playerClass;
     private ArrayList<Integer> statsArray;
+    private ArrayList<Spell> charaterSpells;
 
     public Character(String name){
         this.name = name;
         this.race = "";
         this.playerClass = new PlayerClass();
         this.statsArray = new ArrayList<>();
+        this.charaterSpells = new ArrayList<Spell>();
     }
 
     public String getName(){

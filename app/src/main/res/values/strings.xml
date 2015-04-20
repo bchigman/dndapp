@@ -68,5 +68,6 @@
     <string name="d20_string">1d20</string>
     <string name="d100_string">1d100</string>
     <string name="title_activity_spell_book">SpellBookActivity</string>
+    <string name="spellbook_sort_text">Search:</string>
 
 </resources>

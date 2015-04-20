@@ -26,7 +26,7 @@
       "duration" : "8 hours",
       "level" : 1,
       "range" : "30 feet",
-      "school" : "Abjuration",
+      "school" : "Abjuration"
    },
    {
       "name" : "Alter Self",
@@ -36,7 +36,7 @@
       "duration" : "Concentration, up to 1 hour",
       "level" : 2,
       "range" : "Self",
-      "school" : "Transmutation",
+      "school" : "Transmutation"
    },
    {
       "name" : "Animal Friendship",
@@ -46,17 +46,17 @@
       "duration" : "24 hours",
       "level" : 1,
       "range" : "30 feet",
-      "school" : "Enchantment",
+      "school" : "Enchantment"
    },
    {
       "name" : "Animal Messenger",
       "castingTime" : "1 action",
       "components" : "V, S, M (a morsel of food)",
-      "description" : "By means of this spell, you use an animal to deliver a message. Choose a Tiny beast you can see within range, such as a squirrel, a blue jay, or a bat. You specify a location, which you must have visited, and a recipient who matches a general description, such as “a manor woman dressed in the uniform of the town guard” or “a red-haired dwarf wearing a pointed hat.” You also speak a message of up to twenty-five words. The target beast travels for the duration of the spell toward the specified location, covering about 50 miles per 24 hours for a flying messenger, or 25 miles for other animals. When the messenger arrives, it delivers your message to the creature that you described, replicating the sound of your voice. The messenger speaks only to a creature matching the description you gave. If the messenger doesn’t reach its destination before the spell ends, the message is lost, and the beast makes its way back to where you cast this spell. At Higher Levels: If you cast this spell using a spell slot of 3nd level or higher, the duration of the spell increases by 48 hours for each slot level above 2nd.",
+      "description" : "By means of this spell, you use an animal to deliver a message. Choose a Tiny beast you can see within range, such as a squirrel, a blue jay, or a bat. You specify a location, which you must have visited, and a recipient who matches a general description, such as “a manor woman dressed in the uniform of the town guard�? or “a red-haired dwarf wearing a pointed hat.�? You also speak a message of up to twenty-five words. The target beast travels for the duration of the spell toward the specified location, covering about 50 miles per 24 hours for a flying messenger, or 25 miles for other animals. When the messenger arrives, it delivers your message to the creature that you described, replicating the sound of your voice. The messenger speaks only to a creature matching the description you gave. If the messenger doesn’t reach its destination before the spell ends, the message is lost, and the beast makes its way back to where you cast this spell. At Higher Levels: If you cast this spell using a spell slot of 3nd level or higher, the duration of the spell increases by 48 hours for each slot level above 2nd.",
       "duration" : "24 hours",
       "level" : 2,
       "range" : "30 feet",
-      "school" : "Enchantment (ritual)",
+      "school" : "Enchantment (ritual)"
    },
    {
       "name" : "Animal Shapes",
@@ -66,7 +66,7 @@
       "duration" : "Concentration, up to 24 hours",
       "level" : 8,
       "range" : "30 feet",
-      "school" : "Transmutation",
+      "school" : "Transmutation"
    },
    {
       "name" : "Animate Dead",
@@ -76,7 +76,7 @@
       "duration" : "Instantaneous",
       "level" : 3,
       "range" : "10 feet",
-      "school" : "Necromancy",
+      "school" : "Necromancy"
    },
    {
       "name" : "Animate Objects",
@@ -86,7 +86,7 @@
       "duration" : "Concentration, up to 1 minute",
       "level" : 5,
       "range" : "120 feet",
-      "school" : "Transmutation",
+      "school" : "Transmutation"
    },
    {
       "name" : "Antilife Shell",
@@ -96,7 +96,7 @@
       "duration" : "Concentration, up to 1 hour",
       "level" : 5,
       "range" : "Self (10-foot radius)",
-      "school" : "Abjuration",
+      "school" : "Abjuration"
    },
    {  "name":"Antimagic Field",
       "castingTime" : "1 action",
@@ -115,7 +115,7 @@
       "duration" : "10 days",
       "level" : 8,
       "range" : "60 feet",
-      "school" : "Enchantment",
+      "school" : "Enchantment"
    },
    {  "name":"Arcane Eye",
       "castingTime" : "1 action",
@@ -134,7 +134,7 @@
       "duration" : "Concentration, up to 10 minutes",
       "level" : 6,
       "range" : "500 feet",
-      "school" : "Conjuration",
+      "school" : "Conjuration"
    },
    {  "name":"Arcane Lock",
       "castingTime" : "1 action",
@@ -153,7 +153,7 @@
       "duration" : "1 hour",
       "level" : 1,
       "range" : "Self",
-      "school" : "Abjuration",
+      "school" : "Abjuration"
    },
    {
       "name" : "Arms of Hadar",
@@ -163,7 +163,7 @@
       "duration" : "Instantaneous",
       "level" : 1,
       "range" : "Self (10-foot radius)",
-      "school" : "Conjuration",
+      "school" : "Conjuration"
    },
    {  "name":"Astral Projection",
       "castingTime" : "1 hour",
@@ -191,7 +191,7 @@
       "duration" : "Concentration, up to 10 minutes",
       "level" : 4,
       "range" : "Self (30-foot radius)",
-      "school" : "Abjuration",
+      "school" : "Abjuration"
    },
    {
       "name" : "Aura of Purity",
@@ -201,7 +201,7 @@
       "duration" : "Concentration, up to 10 minutes",
       "level" : 4,
       "range" : "Self (30-foot radius)",
-      "school" : "Abjuration",
+      "school" : "Abjuration"
    },
    {
       "name" : "Aura of Vitality",
@@ -211,7 +211,7 @@
       "duration" : "Concentration, up to 1 minute",
       "level" : 3,
       "range" : "Self (30-foot radius)",
-      "school" : "Evocation",
+      "school" : "Evocation"
    },
    {
       "name" : "Awaken",
@@ -221,7 +221,7 @@
       "duration" : "Instantaneous",
       "level" : 5,
       "range" : "Touch",
-      "school" : "Transmutation",
+      "school" : "Transmutation"
    },
    {
       "name" : "Bane",
@@ -231,7 +231,7 @@
       "duration" : "Concentration, up to 1 minute",
       "level" : 1,
       "range" : "30 feet",
-      "school" : "Enchantment",
+      "school" : "Enchantment"
    },
    {
       "name" : "Banishing Smite",
@@ -241,7 +241,7 @@
       "duration" : "Concentration, up to 1 minute",
       "level" : 5,
       "range" : "Self",
-      "school" : "Abjuration",
+      "school" : "Abjuration"
    },
    {
       "name" : "Banishment",
@@ -251,7 +251,7 @@
       "duration" : "Concentration, up to 1 minute",
       "level" : 4,
       "range" : "60 feet",
-      "school" : "Abjuration",
+      "school" : "Abjuration"
    },
    {
       "name" : "Barkskin",
@@ -261,7 +261,7 @@
       "duration" : "Concentration, up to one hour",
       "level" : 2,
       "range" : "Touch",
-      "school" : "Transmutation",
+      "school" : "Transmutation"
    },
    {  "name":"Beacon of Hope",
       "castingTime" : "1 action",
@@ -280,7 +280,7 @@
       "duration" : "Concentration, up to 1 hour",
       "level" : 2,
       "range" : "touch",
-      "school" : "Divination (ritual)",
+      "school" : "Divination (ritual)"
    },
    {
       "name" : "Bestow Curse",
@@ -290,7 +290,7 @@
       "duration" : "Concentration, up to 1 minute",
       "level" : 3,
       "range" : "Touch",
-      "school" : "Necromancy",
+      "school" : "Necromancy"
    },
    {
       "name" : "Bigby's Hand",
@@ -300,7 +300,7 @@
       "duration" : "Concentration, up to 1 minute",
       "level" : 5,
       "range" : "120 feet",
-      "school" : "Evocation",
+      "school" : "Evocation"
    },
    {  "name":"Blade Barrier",
       "castingTime" : "1 action",
@@ -319,7 +319,7 @@
       "duration" : "1 round",
       "level" : 0,
       "range" : "Self",
-      "school" : "Abjuration",
+      "school" : "Abjuration"
    },
    {  "name":"Bless",
       "castingTime" : "1 action",
@@ -338,7 +338,7 @@
       "duration" : "Instantaneous",
       "level" : 4,
       "range" : "30 feet",
-      "school" : "Necromancy",
+      "school" : "Necromancy"
    },
    {
       "name" : "Blinding Smite",
@@ -348,7 +348,7 @@
       "duration" : "Concentration, up to 1 minute",
       "level" : 3,
       "range" : "Self",
-      "school" : "Evocation",
+      "school" : "Evocation"
    },
    {
       "name" : "Blindness/Deafness",
@@ -358,7 +358,7 @@
       "duration" : "1 minute",
       "level" : 2,
       "range" : "30 feet",
-      "school" : "Necromancy",
+      "school" : "Necromancy"
    },
    {
       "name" : "Blink",
@@ -368,7 +368,7 @@
       "duration" : "1 minute",
       "level" : 3,
       "range" : "Self",
-      "school" : "Transmutation",
+      "school" : "Transmutation"
    },
    {  "name":"Blur",
       "castingTime" : "1 action",
@@ -387,7 +387,7 @@
       "duration" : "Concentration, up to 1 minute",
       "level" : 2,
       "range" : "Self",
-      "school" : "Evocation",
+      "school" : "Evocation"
    },
    {  "name":"Burning Hands",
       "castingTime" : "1 action",
@@ -406,7 +406,7 @@
       "duration" : "Concentration, up to 10 minutes",
       "level" : 3,
       "range" : "120 feet",
-      "school" : "Conjuration",
+      "school" : "Conjuration"
    },
    {
       "name" : "Calm Emotions",
@@ -416,7 +416,7 @@
       "duration" : "Concentration, up to 1 minute",
       "level" : 2,
       "range" : "60 feet",
-      "school" : "Enchantment",
+      "school" : "Enchantment"
    },
    {  "name":"Chain Lightning",
       "castingTime" : "1 action",
@@ -444,7 +444,7 @@
       "duration" : "1 round",
       "level" : 0,
       "range" : "120 feet",
-      "school" : "Necromancy",
+      "school" : "Necromancy"
    },
    {
       "name" : "Chromatic Orb",
@@ -454,7 +454,7 @@
       "duration" : "Instantaneous",
       "level" : 1,
       "range" : "90 feet",
-      "school" : "Evocation",
+      "school" : "Evocation"
    },
    {
       "name" : "Circle of Death",
@@ -464,7 +464,7 @@
       "duration" : "Instantaneous",
       "level" : 6,
       "range" : "150 feet",
-      "school" : "Necromancy",
+      "school" : "Necromancy"
    },
    {
       "name" : "Circle of Power",
@@ -474,7 +474,7 @@
       "duration" : "Concentration, up to 10 minutes",
       "level" : 5,
       "range" : "Self (30 foot radius)",
-      "school" : "Abjuration",
+      "school" : "Abjuration"
    },
    {
       "name" : "Clairvoyance",
@@ -484,7 +484,7 @@
       "duration" : "Concentration, up to 10 minutes",
       "level" : 3,
       "range" : "1 mile",
-      "school" : "Divination",
+      "school" : "Divination"
    },
    {
       "name" : "Clone",
@@ -494,7 +494,7 @@
       "duration" : "Instantaneous",
       "level" : 8,
       "range" : "Touch",
-      "school" : "Necromancy",
+      "school" : "Necromancy"
    },
    {
       "name" : "Cloud of Daggers",
@@ -504,7 +504,7 @@
       "duration" : "Concentration, up to 1 minute",
       "level" : 2,
       "range" : "60 feet",
-      "school" : "Conjuration",
+      "school" : "Conjuration"
    },
    {
       "name" : "Cloudkill",
@@ -514,7 +514,7 @@
       "duration" : "Concentration, up to 10 minutes",
       "level" : 5,
       "range" : "120 feet",
-      "school" : "Conjuration",
+      "school" : "Conjuration"
    },
    {
       "name" : "Color Spray",
@@ -524,7 +524,7 @@
       "duration" : "1 round",
       "level" : 1,
       "range" : "Self (15 foot cone)",
-      "school" : "Illusion",
+      "school" : "Illusion"
    },
    {  "name":"Command",
       "castingTime" : "1 action",
@@ -538,7 +538,7 @@
    {  "name":"Commune",
       "castingTime" : "1 minute",
       "components" : "V, S, M (incense and a vial of holy or unholy water)",
-      "description" : "You contact your deity or a divine proxy and ask up to three questions that can be answered with a yes or no. You must ask your questions before the spell ends. You receive a correct answer for each question. Divine beings aren’t necessarily omniscient, so you might receive “unclear” as an answer if a question pertains to information that lies beyond the deity’s knowledge. In a case where a one-word answer could be misleading or contrary to the deity’s interests, the DM might offer a short phrase as an answer instead. If you cast the spell two or more times before finishing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get no answer. The DM makes this roll in secret.",
+      "description" : "You contact your deity or a divine proxy and ask up to three questions that can be answered with a yes or no. You must ask your questions before the spell ends. You receive a correct answer for each question. Divine beings aren’t necessarily omniscient, so you might receive “unclear�? as an answer if a question pertains to information that lies beyond the deity’s knowledge. In a case where a one-word answer could be misleading or contrary to the deity’s interests, the DM might offer a short phrase as an answer instead. If you cast the spell two or more times before finishing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get no answer. The DM makes this roll in secret.",
       "duration" : "1 minute",
       "level" : 5,
       "range" : "Self",
@@ -552,7 +552,7 @@
       "duration" : "Instantaneous",
       "level" : 5,
       "range" : "Self",
-      "school" : "Divination",
+      "school" : "Divination"
    },
    {
       "name" : "Compelled Duel",
@@ -562,7 +562,7 @@
       "duration" : "Concentration, up to 1 minute",
       "level" : 1,
       "range" : "30 feet",
-      "school" : "Enchantment",
+      "school" : "Enchantment"
    },
    {  "name":"Comprehend Languages",
       "castingTime" : "1 action",
@@ -581,7 +581,7 @@
       "duration" : "Concentration, up to 1 minute",
       "level" : 4,
       "range" : "30 feet",
-      "school" : "Enchantment",
+      "school" : "Enchantment"
    },
    {  "name":"Cone of Cold",
       "castingTime" : "1 action",
@@ -600,7 +600,7 @@
       "duration" : "Concentration, up to 1 minute",
       "level" : 4,
       "range" : "90 feet",
-      "school" : "Enchantment",
+      "school" : "Enchantment"
    },
    {  "name":"Counterspell",
       "castingTime" : "1 reaction, which you take when you see a creature within 60 feet of you casting a spell",
@@ -668,7 +668,7 @@
    {  "name":"Dimension Door",
       "castingTime" : "1 action",
       "components" : "V",
-      "description" : "You teleport yourself from your current location to any other spot within range. You arrive at exactly the spot desired. It can be a place you can see, one you can visualize, or one you can describe by stating distance and direction, such as “200 feet straight downward” or “upward to the northwest at a 45-degree angle, 300 feet.” You can bring along objects as long as their weight doesn’t exceed what you can carry. You can also bring one willing creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell. If you would arrive in a place already occupied by an object or a creature, you and any creature traveling with you each take 4d6 force damage, and the spell fails to teleport you.",
+      "description" : "You teleport yourself from your current location to any other spot within range. You arrive at exactly the spot desired. It can be a place you can see, one you can visualize, or one you can describe by stating distance and direction, such as “200 feet straight downward�? or “upward to the northwest at a 45-degree angle, 300 feet.�? You can bring along objects as long as their weight doesn’t exceed what you can carry. You can also bring one willing creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell. If you would arrive in a place already occupied by an object or a creature, you and any creature traveling with you each take 4d6 force damage, and the spell fails to teleport you.",
       "duration" : "Instantaneous",
       "level" : 4,
       "range" : "500 feet",
@@ -713,7 +713,7 @@
    {  "name":"Dominate Monster",
       "castingTime" : "1 action",
       "components" : "V, S",
-      "description" : "You attempt to beguile a creature that you can see within range. It must succeed on a Wisdom saving throw or be charmed by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw. While the creature is charmed, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as “Attack that creature,” “Run over there,” or “Fetch that object.” If the creature completes the order and doesn’t receive further direction from you, it defends and preserves itself to the best of its ability. You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn’t do anything that you don’t allow it to do. During this time, you can also cause the creature to use a reaction, but this requires you to use your own reaction as well. Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends. At Higher Levels. When you cast this spell with a 9th-level spell slot, the duration is concentration, up to 8 hours.",
+      "description" : "You attempt to beguile a creature that you can see within range. It must succeed on a Wisdom saving throw or be charmed by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw. While the creature is charmed, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as “Attack that creature,�? “Run over there,�? or “Fetch that object.�? If the creature completes the order and doesn’t receive further direction from you, it defends and preserves itself to the best of its ability. You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn’t do anything that you don’t allow it to do. During this time, you can also cause the creature to use a reaction, but this requires you to use your own reaction as well. Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends. At Higher Levels. When you cast this spell with a 9th-level spell slot, the duration is concentration, up to 8 hours.",
       "duration" : "Concentration, up to 1 hour",
       "level" : 8,
       "range" : "60 feet",
@@ -722,7 +722,7 @@
    {  "name":"Dominate Person",
       "castingTime" : "1 action",
       "components" : "V, S",
-      "description" : "You attempt to beguile a humanoid that you can see within range. It must succeed on a Wisdom saving throw or be charmed by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw. While the target is charmed, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as “Attack that creature,” “Run over there,” or “Fetch that object.” If the creature completes the order and doesn’t receive further direction from you, it defends and preserves itself to the best of its ability. You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn’t do anything that you don’t allow it to do. During this time you can also cause the creature to use a reaction, but this requires you to use your own reaction as well. Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends. At Higher Levels. When you cast this spell using a 6th-level spell slot, the duration is concentration, up to 10 minutes. When you use a 7th-level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 8th level or higher, the duration is concentration, up to 8 hours.",
+      "description" : "You attempt to beguile a humanoid that you can see within range. It must succeed on a Wisdom saving throw or be charmed by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw. While the target is charmed, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as “Attack that creature,�? “Run over there,�? or “Fetch that object.�? If the creature completes the order and doesn’t receive further direction from you, it defends and preserves itself to the best of its ability. You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn’t do anything that you don’t allow it to do. During this time you can also cause the creature to use a reaction, but this requires you to use your own reaction as well. Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends. At Higher Levels. When you cast this spell using a 6th-level spell slot, the duration is concentration, up to 10 minutes. When you use a 7th-level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 8th level or higher, the duration is concentration, up to 8 hours.",
       "duration" : "Concentration, up to 1 minute",
       "level" : 5,
       "range" : "60 feet",
@@ -758,7 +758,7 @@
    {  "name":"Find the Path",
       "castingTime" : "1 minute",
       "components" : "V, S, M (a set of divinatory tools—such as bones, ivory sticks, cards, teeth, or carved runes— worth 100 gp and an object from the location you wish to find)",
-      "description" : "This spell allows you to find the shortest, most direct physical route to a specific fixed location that you are familiar with on the same plane of existence. If you name a destination on another plane of existence, a destination that moves (such as a mobile fortress), or a destination that isn’t specific (such as “a green dragon’s lair”), the spell fails. For the duration, as long as you are on the same plane of existence as the destination, you know how far it is and in what direction it lies. While you are traveling there, whenever you are presented with a choice of paths along the way, you automatically determine which path is the shortest and most direct route (but not necessarily the safest route) to the destination. Faerie Fire 1st-level evocation Casting Time: 1 action Range: 60 feet Components: V Duration: Concentration, up to 1 minute Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius. Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can’t benefit from being invisible.",
+      "description" : "This spell allows you to find the shortest, most direct physical route to a specific fixed location that you are familiar with on the same plane of existence. If you name a destination on another plane of existence, a destination that moves (such as a mobile fortress), or a destination that isn’t specific (such as “a green dragon’s lair�?), the spell fails. For the duration, as long as you are on the same plane of existence as the destination, you know how far it is and in what direction it lies. While you are traveling there, whenever you are presented with a choice of paths along the way, you automatically determine which path is the shortest and most direct route (but not necessarily the safest route) to the destination. Faerie Fire 1st-level evocation Casting Time: 1 action Range: 60 feet Components: V Duration: Concentration, up to 1 minute Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius. Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can’t benefit from being invisible.",
       "duration" : "Concentration, up to 1 day",
       "level" : 6,
       "range" : "Self",
@@ -1487,7 +1487,7 @@
    {  "name":"Teleport",
       "castingTime" : "1 action",
       "components" : "V",
-      "description" : "This spell instantly transports you and up to eight willing creatures of your choice that you can see within range, or a single object that you can see within range, to a destination you select. If you target an object, it must be able to fit entirely inside a 10-foot cube, and it can’t be held or carried by an unwilling creature. The destination you choose must be known to you, and it must be on the same plane of existence as you. Your familiarity with the destination determines whether you arrive there successfully. The DM rolls d100 and consults the table. Familiarity. “Permanent circle” means a permanent teleportation circle whose sigil sequence you know. “Associated object” means that you possess an object taken from the desired destination within the last six months, such as a book from a wizard’s library, bed linen from a royal suite, or a chunk of marble from a lich’s secret tomb. “Very familiar” is a place you have been very often, a place you have carefully studied, or a place you can see when you cast the spell. “Seen casually” is someplace you have seen more than once but with which you aren’t very familiar. “Viewed once” is a place you have seen once, possibly using magic. “Description” is a place whose location and appearance you know through someone else’s description, perhaps from a map. “False destination” is a place that doesn’t exist. Perhaps you tried to scry an enemy’s sanctum but instead viewed an illusion, or you are attempting to teleport to a familiar location that no longer exists. On Target. You and your group (or the target object) appear where you want to. Off Target. You and your group (or the target object) appear a random distance away from the destination in a random direction. Distance off target is 1d10 × 1d10 percent of the distance that was to be traveled. For example, if you tried to travel 120 miles, landed off target, and rolled a 5 and 3 on the two d10s, then you would be off target by 15 percent, or 18 miles. The DM determines the direction off target randomly by rolling a d8 and designating 1 as north, 2 as northeast, 3 as east, and so on around the points of the compass. If you were teleporting to a coastal city and wound up 18 miles out at sea, you could be in trouble. Similar Area. You and your group (or the target object) wind up in a different area that’s visually or thematically similar to the target area. If you are heading for your home laboratory, for example, you might wind up in another wizard’s laboratory or in an alchemical supply shop that has many of the same tools and implements as your laboratory. Generally, you appear in the closest similar place, but since the spell has no range limit, you could conceivably wind up anywhere on the plane. Mishap. The spell’s unpredictable magic results in a difficult journey. Each teleporting creature (or the target object) takes 3d10 force damage, and the DM rerolls on the table to see where you wind up (multiple mishaps can occur, dealing damage each time). Similar Off On Familiarity Mishap Area Target Target Permanent circle — — — 01–100 Associated object — — — 01–100 Very familiar 01–05 06–13 14–24 25–100 Seen casually 01–33 34–43 44–53 54–100 Viewed once 01–43 44–53 54–73 74–100 Description 01–43 44–53 54–73 74–100 False destination 01–50 51–100 — —",
+      "description" : "This spell instantly transports you and up to eight willing creatures of your choice that you can see within range, or a single object that you can see within range, to a destination you select. If you target an object, it must be able to fit entirely inside a 10-foot cube, and it can’t be held or carried by an unwilling creature. The destination you choose must be known to you, and it must be on the same plane of existence as you. Your familiarity with the destination determines whether you arrive there successfully. The DM rolls d100 and consults the table. Familiarity. “Permanent circle�? means a permanent teleportation circle whose sigil sequence you know. “Associated object�? means that you possess an object taken from the desired destination within the last six months, such as a book from a wizard’s library, bed linen from a royal suite, or a chunk of marble from a lich’s secret tomb. “Very familiar�? is a place you have been very often, a place you have carefully studied, or a place you can see when you cast the spell. “Seen casually�? is someplace you have seen more than once but with which you aren’t very familiar. “Viewed once�? is a place you have seen once, possibly using magic. “Description�? is a place whose location and appearance you know through someone else’s description, perhaps from a map. “False destination�? is a place that doesn’t exist. Perhaps you tried to scry an enemy’s sanctum but instead viewed an illusion, or you are attempting to teleport to a familiar location that no longer exists. On Target. You and your group (or the target object) appear where you want to. Off Target. You and your group (or the target object) appear a random distance away from the destination in a random direction. Distance off target is 1d10 × 1d10 percent of the distance that was to be traveled. For example, if you tried to travel 120 miles, landed off target, and rolled a 5 and 3 on the two d10s, then you would be off target by 15 percent, or 18 miles. The DM determines the direction off target randomly by rolling a d8 and designating 1 as north, 2 as northeast, 3 as east, and so on around the points of the compass. If you were teleporting to a coastal city and wound up 18 miles out at sea, you could be in trouble. Similar Area. You and your group (or the target object) wind up in a different area that’s visually or thematically similar to the target area. If you are heading for your home laboratory, for example, you might wind up in another wizard’s laboratory or in an alchemical supply shop that has many of the same tools and implements as your laboratory. Generally, you appear in the closest similar place, but since the spell has no range limit, you could conceivably wind up anywhere on the plane. Mishap. The spell’s unpredictable magic results in a difficult journey. Each teleporting creature (or the target object) takes 3d10 force damage, and the DM rerolls on the table to see where you wind up (multiple mishaps can occur, dealing damage each time). Similar Off On Familiarity Mishap Area Target Target Permanent circle — — — 01–100 Associated object — — — 01–100 Very familiar 01–05 06–13 14–24 25–100 Seen casually 01–33 34–43 44–53 54–100 Viewed once 01–43 44–53 54–73 74–100 Description 01–43 44–53 54–73 74–100 False destination 01–50 51–100 — —",
       "duration" : "Instantaneous",
       "level" : 7,
       "range" : "10 feet",

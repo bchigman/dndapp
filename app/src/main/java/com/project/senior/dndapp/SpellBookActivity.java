@@ -5,7 +5,12 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
+
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import java.io.BufferedReader;
@@ -25,8 +30,25 @@ public class SpellBookActivity extends ActionBarActivity {
             BufferedReader reader = new BufferedReader(new InputStreamReader(assets.open("spellbook.json")));
             Gson gson = new Gson();
             List<Spell> spells = gson.fromJson(reader, new TypeToken<List<Spell>>(){}.getType());
-            TextView spellbookText = (TextView) findViewById(R.id.spellbook_text);
-            spellbookText.setText(spells.toString() + spells.size());
+            ListAdapter listAdapter = new spellAdapter(this, spells);
+            ListView listView = (ListView) findViewById(R.id.spellbook_listView);
+            listView.setAdapter(listAdapter);
+
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    Spell spell = (Spell) parent.getAdapter().getItem(position);
+
+                    //Toast.makeText(SpellBookActivity.this, spell.getDescription(), Toast.LENGTH_LONG).show();
+                    TextView tview = (TextView) view.findViewById(R.id.spell_row_description);
+                    if (tview.getText().equals(""))
+                        tview.setText(spell.getDescription());
+                    else
+                        tview.setText("");
+                }
+            });
+            //TextView spellbookText = (TextView) findViewById(R.id.spellbook_text);
+            //spellbookText.setText(spells.toString() + spells.size());
         }catch (Exception e){
             e.printStackTrace(System.err);
         }
