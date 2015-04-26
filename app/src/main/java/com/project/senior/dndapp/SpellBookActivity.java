@@ -1,17 +1,24 @@
 package com.project.senior.dndapp;
 
+import android.app.SearchManager;
+import android.content.Context;
 import android.content.res.AssetManager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.SearchView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -37,25 +44,26 @@ public class SpellBookActivity extends ActionBarActivity {
             BufferedReader reader = new BufferedReader(new InputStreamReader(assets.open("spellbook.json")));
             Gson gson = new Gson();
             List<Spell> spells = gson.fromJson(reader, new TypeToken<List<Spell>>(){}.getType());
-            ListAdapter listAdapter = new spellAdapter(this, spells);
+            SpellAdapter listAdapter = new SpellAdapter(this, spells);
             ListView listView = (ListView) findViewById(R.id.spellbook_listView);
             listView.setAdapter(listAdapter);
+            EditText searchText = (EditText) findViewById(R.id.spellbook_searchbar);
+            searchText.addTextChangedListener(new SpellbookTextWatcher(this, listAdapter, spells));
 
             listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     Spell spell = (Spell) parent.getAdapter().getItem(position);
 
-                    //Toast.makeText(SpellBookActivity.this, spell.getDescription(), Toast.LENGTH_LONG).show();
                     TextView tview = (TextView) view.findViewById(R.id.spell_row_description);
-                    if (tview.getText().equals(""))
+                    if (tview.getText().equals("")) {
                         tview.setText(spell.getDescription());
-                    else
+                    } else {
                         tview.setText("");
+                    }
                 }
             });
-            //TextView spellbookText = (TextView) findViewById(R.id.spellbook_text);
-            //spellbookText.setText(spells.toString() + spells.size());
+
         }catch (Exception e){
             e.printStackTrace(System.err);
         }

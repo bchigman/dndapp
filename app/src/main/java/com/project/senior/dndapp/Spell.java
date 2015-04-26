@@ -3,6 +3,7 @@ package com.project.senior.dndapp;
 import java.util.ArrayList;
 
 /**
+ * Spell class to store spells
  * Created by Ben on 4/15/2015.
  */
 public class Spell {

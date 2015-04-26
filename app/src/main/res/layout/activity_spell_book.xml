@@ -24,6 +24,7 @@
             android:text="@string/spellbook_sort_text"/>
 
         <EditText
+            android:id="@+id/spellbook_searchbar"
             android:layout_width="0dp"
             android:layout_weight=".7"
             android:inputType="text"
