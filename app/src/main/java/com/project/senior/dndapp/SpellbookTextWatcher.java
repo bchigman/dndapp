@@ -1,11 +1,16 @@
 package com.project.senior.dndapp;
 
 import android.content.Context;
+import android.content.res.AssetManager;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.widget.ListView;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,10 +25,18 @@ public class SpellbookTextWatcher implements TextWatcher {
     private List<Spell> resetList;
     private List<Spell> newList;
 
-    public SpellbookTextWatcher(Context context, SpellAdapter la, List<Spell> lv){
+    public SpellbookTextWatcher(Context context, SpellAdapter la){
         this.context = context;
         this.listAdapter = la;
-        this.resetList = lv;
+        try {
+            AssetManager assets = this.getContext().getAssets();
+            BufferedReader reader = new BufferedReader(new InputStreamReader(assets.open("spellbook.json")));
+            Gson gson = new Gson();
+            this.resetList = gson.fromJson(reader, new TypeToken<List<Spell>>() {
+            }.getType());
+        }catch(Exception e){
+            e.printStackTrace(System.err);
+        }
         this.newList = new ArrayList<>();
     }
 
@@ -42,7 +55,7 @@ public class SpellbookTextWatcher implements TextWatcher {
         }
         this.listAdapter.clearAdapter();
         this.listAdapter.addAll(this.newList);
-        Toast.makeText(this.context, ""+this.resetList, Toast.LENGTH_LONG).show();
+        //Toast.makeText(this.context, ""+this.resetList, Toast.LENGTH_LONG).show();
         if(text.equals("")){
             this.listAdapter.clearAdapter();
             this.listAdapter.addAll(this.resetList);

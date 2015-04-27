@@ -1,24 +1,17 @@
 package com.project.senior.dndapp;
 
-import android.app.SearchManager;
-import android.content.Context;
 import android.content.res.AssetManager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
-import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.SearchView;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -48,7 +41,7 @@ public class SpellBookActivity extends ActionBarActivity {
             ListView listView = (ListView) findViewById(R.id.spellbook_listView);
             listView.setAdapter(listAdapter);
             EditText searchText = (EditText) findViewById(R.id.spellbook_searchbar);
-            searchText.addTextChangedListener(new SpellbookTextWatcher(this, listAdapter, spells));
+            searchText.addTextChangedListener(new SpellbookTextWatcher(this, listAdapter));
 
             listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
@@ -88,7 +81,6 @@ public class SpellBookActivity extends ActionBarActivity {
         if (id == R.id.action_settings) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 }
