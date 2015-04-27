@@ -95,7 +95,8 @@ public class Spell {
 
     @Override
     public String toString() {
-        return this.name + " - level: " + this.level + "\n";
+        return this.name + "\n" +
+            "Level " + this.level + " - "+ this.school +"\n";
     }
 
 }

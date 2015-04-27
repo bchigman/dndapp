@@ -1,0 +1,108 @@
+<string-array name="clericspells">
+	<item>Guidance</item>
+	<item>Light</item>
+	<item>Mending</item>
+	<item>Resistance</item>
+	<item>Sacred Flame</item>
+	<item>Spare the Dying</item>
+	<item>Thaumaturgy</item>
+	<item>Bane</item>
+	<item>Bless</item>
+	<item>Command</item>
+	<item>Create or Destroy Water</item>
+	<item>Cure Wounds</item>
+	<item>Detect Evil and Good</item>
+	<item>Detect Magic</item>
+	<item>Detect Poison and Disease</item>
+	<item>Guiding Bolt</item>
+	<item>Healing Word</item>
+	<item>Inflict Wounds</item>
+	<item>Protection from Evil and Good</item>
+	<item>Purify Food and Drink</item>
+	<item>Sanctuary</item>
+	<item>Shield of Faith</item>
+	<item>Aid</item>
+	<item>Augury</item>
+	<item>Blindness/Deafness</item>
+	<item>Calm Emotions</item>
+	<item>Continual Flame</item>
+	<item>Enhance Ability</item>
+	<item>Find Traps</item>
+	<item>Gentle Repose</item>
+	<item>Hold Person</item>
+	<item>Lesser Restoration</item>
+	<item>Locate Object</item>
+	<item>Prayer of Healing</item>
+	<item>Protection from Poison</item>
+	<item>Silence	2nd	Illusion</item>
+	<item>Spiritual Weapon</item>
+	<item>Warding Bond</item>
+	<item>Zone of Truth</item>
+	<item>Animate Dead</item>
+	<item>Beacon of Hope</item>
+	<item>Bestow Curse</item>
+	<item>Clairvoyance</item>
+	<item>Create Food and Water</item>
+	<item>Daylight</item>
+	<item>Dispel Magic</item>
+	<item>Feign Death</item>
+	<item>Glyph of Warding</item>
+	<item>Magic Circle</item>
+	<item>Mass Healing Word</item>
+	<item>Meld into Stone</item>
+	<item>Protection from Energy</item>
+	<item>Remove Curse</item>
+	<item>Revivify</item>
+	<item>Sending</item>
+	<item>Speak with Dead</item>
+	<item>Spirit Guardians</item>
+	<item>Tongues</item>
+	<item>Water Walk</item>
+	<item>Banishment</item>
+	<item>Control Water</item>
+	<item>Death Ward</item>
+	<item>Divination</item>
+	<item>Freedom of Movement</item>
+	<item>Guardian of Faith</item>
+	<item>Locate Creature</item>
+	<item>Stone Shape</item>
+	<item>Commune</item>
+	<item>Contagion</item>
+	<item>Dispel Evil and Good</item>
+	<item>Flame Strike</item>
+	<item>Geas</item>
+	<item>Greater Restoration</item>
+	<item>Hallow</item>
+	<item>Insect Plague</item>
+	<item>Legend Lore</item>
+	<item>Mass Cure Wounds</item>
+	<item>Planar Binding</item>
+	<item>Raise Dead</item>
+	<item>Scrying</item>
+	<item>Blade Barrier</item>
+	<item>Create Undead</item>
+	<item>Find the Path</item>
+	<item>Forbiddance</item>
+	<item>Harm</item>
+	<item>Heal</item>
+	<item>Heroes' Feast</item>
+	<item>Planar Ally</item>
+	<item>True Seeing</item>
+	<item>Word of Recall</item>
+	<item>Conjure Celestial</item>
+	<item>Divine Word</item>
+	<item>Etherealness</item>
+	<item>Fire Storm</item>
+	<item>Plane Shift</item>
+	<item>Regenerate</item>
+	<item>Resurrection</item>
+	<item>Symbol</item>
+	<item>Antimagic Field</item>
+	<item>Control Weather</item>
+	<item>Earthquake</item>
+	<item>Holy Aura</item>
+	<item>Astral Projection</item>
+	<item>Gate</item>
+	<item>Mass Heal</item>
+	<item>True Resurrection</item>
+</string-array>

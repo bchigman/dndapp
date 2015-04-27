@@ -1,0 +1,127 @@
+<string-array name="bard-spells">
+	<item>Blade Ward</item>
+	<item>Dancing Lights</item>
+	<item>Friends</item>
+	<item>Light</item>
+	<item>Mage Hand</item>
+	<item>Mending</item>
+	<item>Message</item>
+	<item>Minor Illusion</item>
+	<item>Prestidigitation</item>
+	<item>Thunderclap</item>
+	<item>True Strike</item>
+	<item>Vicious Mockery</item>
+	<item>Animal Friendship</item>
+	<item>Bane</item>
+	<item>Charm Person</item>
+	<item>Comprehend Languages</item>
+	<item>Cure Wounds</item>
+	<item>Detect Magic</item>
+	<item>Disguise Self</item>
+	<item>Dissonant Whispers</item>
+	<item>Earth Tremor</item>
+	<item>Faerie Fire</item>
+	<item>Feather Fall</item>
+	<item>Healing Word</item>
+	<item>Heroism</item>
+	<item>Identify</item>
+	<item>Illusory Script</item>
+	<item>Longstrider</item>
+	<item>Silent Image</item>
+	<item>Sleep</item>
+	<item>Speak with Animals</item>
+	<item>Tasha's Hideous Laughter</item>
+	<item>Thunderwave</item>
+	<item>Unseen Servant</item>
+	<item>Animal Messenger</item>
+	<item>Blindness/Deafness</item>
+	<item>Calm Emotions</item>
+	<item>Cloud of Daggers</item>
+	<item>Crown of Madness</item>
+	<item>Detect Thoughts</item>
+	<item>Enhance Ability</item>
+	<item>Enthrall</item>
+	<item>Heat Metal</item>
+	<item>Hold Person</item>
+	<item>Invisibility</item>
+	<item>Knock</item>
+	<item>Lesser Restoration</item>
+	<item>Locate Animals or Plants</item>
+	<item>Locate Object</item>
+	<item>Magic Mouth</item>
+	<item>Phantasmal Force</item>
+	<item>Pyrotechnics</item>
+	<item>See Invisibility</item>
+	<item>Shatter</item>
+	<item>Silence</item>
+	<item>Skywrite</item>
+	<item>Suggestion</item>
+	<item>Warding Wind</item>
+	<item>Zone of Truth</item>
+	<item>Bestow Curse</item>
+	<item>Clairvoyance</item>
+	<item>Dispel Magic</item>
+	<item>Fear</item>
+	<item>Feign Death</item>
+	<item>Glyph of Warding</item>
+	<item>Hypnotic Pattern</item>
+	<item>Leomund's Tiny Hut</item>
+	<item>Major Image</item>
+	<item>Nondetection</item>
+	<item>Plant Growth</item>
+	<item>Sending</item>
+	<item>Speak with Dead</item>
+	<item>Speak with Plants</item>
+	<item>Stinking Cloud</item>
+	<item>Tongues</item>
+	<item>Compulsion</item>
+	<item>Confusion</item>
+	<item>Dimension Door</item>
+	<item>Freedom of Movement</item>
+	<item>Greater Invisibility</item>
+	<item>Hallucinatory Terrain</item>
+	<item>Locate Creature</item>
+	<item>Polymorph</item>
+	<item>Animate Objects</item>
+	<item>Awaken</item>
+	<item>Dominate Person</item>
+	<item>Dream</item>
+	<item>Geas</item>
+	<item>Greater Restoration</item>
+	<item>Hold Monster</item>
+	<item>Legend Lore</item>
+	<item>Mass Cure Wounds</item>
+	<item>Mislead</item>
+	<item>Modify Memory</item>
+	<item>Planar Binding</item>
+	<item>Raise Dead</item>
+	<item>Scrying</item>
+	<item>Seeming</item>
+	<item>Teleportation Circle</item>
+	<item>Eyebite</item>
+	<item>Find the Path</item>
+	<item>Guards and Wards</item>
+	<item>Mass Suggestion</item>
+	<item>Otto's Irresistible Dance</item>
+	<item>Programmed Illusion</item>
+	<item>True Seeing</item>
+	<item>Etherealness</item>
+	<item>Forcecage</item>
+	<item>Mirage Arcane</item>
+	<item>Mordenkainen's Magnificent Mansion</item>
+	<item>Mordenkainen's Sword</item>
+	<item>Project Image</item>
+	<item>Regenerate</item>
+	<item>Resurrection</item>
+	<item>Symbol</item>
+	<item>Teleport</item>
+	<item>Dominate Monster</item>
+	<item>Feeblemind</item>
+	<item>Glibness</item>
+	<item>Mind Blank</item>
+	<item>Power Word Stun</item>
+	<item>Foresight</item>
+	<item>Power Word Heal</item>
+	<item>Power Word Kill</item>
+	<item>True Polymorph</item>
+</string-array>
