@@ -1,0 +1,144 @@
+<string-array name="druidspels">
+	<item>Control Flames</item>
+	<item>Create Bonfire</item>
+	<item>Druidcraft</item>
+	<item>Frostbite</item>
+	<item>Guidance</item>
+	<item>Gust</item>
+	<item>Magic Stone</item>
+	<item>Mending</item>
+	<item>Mold Earth</item>
+	<item>Poison Spray</item>
+	<item>Produce Flame</item>
+	<item>Resistance</item>
+	<item>Shape Water</item>
+	<item>Shillelagh</item>
+	<item>Thorn Whip</item>
+	<item>Thunderclap</item>
+	<item>Absorb Elements</item>
+	<item>Animal Friendship</item>
+	<item>Beast Bond</item>
+	<item>Charm Person</item>
+	<item>Create or Destroy Water</item>
+	<item>Cure Wounds</item>
+	<item>Detect Magic</item>
+	<item>Detect Poison and Disease</item>
+	<item>Earth Tremor</item>
+	<item>Entangle</item>
+	<item>Faerie Fire</item>
+	<item>Fog Cloud</item>
+	<item>Goodberry</item>
+	<item>Healing Word</item>
+	<item>Ice Knife</item>
+	<item>Jump</item>
+	<item>Longstrider</item>
+	<item>Purify Food and Drink</item>
+	<item>Speak with Animals</item>
+	<item>Thunderwave</item>
+	<item>Animal Messenger</item>
+	<item>Barkskin</item>
+	<item>Beast Sense</item>
+	<item>Darkvision</item>
+	<item>Dust Devil</item>
+	<item>Earthbind</item>
+	<item>Enhance Ability</item>
+	<item>Find Traps</item>
+	<item>Flame Blade</item>
+	<item>Flaming Sphere</item>
+	<item>Gust of Wind</item>
+	<item>Heat Metal</item>
+	<item>Hold Person</item>
+	<item>Lesser Restoration</item>
+	<item>Locate Animals or Plants</item>
+	<item>Locate Object</item>
+	<item>Moonbeam</item>
+	<item>Pass without Trace</item>
+	<item>Protection from Poison</item>
+	<item>Skywrite</item>
+	<item>Spike Growth</item>
+	<item>Warding Wind</item>
+	<item>Call Lightning</item>
+	<item>Conjure Animals</item>
+	<item>Daylight</item>
+	<item>Dispel Magic</item>
+	<item>Erupting Earth</item>
+	<item>Feign Death</item>
+	<item>Flame Arrows</item>
+	<item>Meld into Stone</item>
+	<item>Plant Growth</item>
+	<item>Protection from Energy</item>
+	<item>Sleet Storm</item>
+	<item>Speak with Plants</item>
+	<item>Tidal Wave</item>
+	<item>Wall of Water</item>
+	<item>Water Breathing</item>
+	<item>Water Walk</item>
+	<item>Wind Wall</item>
+	<item>Blight</item>
+	<item>Confusion</item>
+	<item>Conjure Minor Elementals</item>
+	<item>Conjure Woodland Beings</item>
+	<item>Control Water</item>
+	<item>Dominate Beast</item>
+	<item>Elemental Bane</item>
+	<item>Freedom of Movement</item>
+	<item>Giant Insect</item>
+	<item>Grasping Vine</item>
+	<item>Hallucinatory Terrain</item>
+	<item>Ice Storm</item>
+	<item>Locate Creature</item>
+	<item>Polymorph</item>
+	<item>Stone Shape</item>
+	<item>Stoneskin</item>
+	<item>Wall of Fire</item>
+	<item>Watery Sphere</item>
+	<item>Antilife Shell</item>
+	<item>Awaken</item>
+	<item>Commune with Nature</item>
+	<item>Conjure Elemental</item>
+	<item>Contagion</item>
+	<item>Control Winds</item>
+	<item>Geas</item>
+	<item>Greater Restoration</item>
+	<item>Insect Plague</item>
+	<item>Maelstrom</item>
+	<item>Mass Cure Wounds</item>
+	<item>Planar Binding</item>
+	<item>Reincarnate</item>
+	<item>Scrying</item>
+	<item>Transmute Rock</item>
+	<item>Tree Stride</item>
+	<item>Wall of Stone</item>
+	<item>Bones of the Earth</item>
+	<item>Conjure Fey</item>
+	<item>Find the Path</item>
+	<item>Heal</item>
+	<item>Heroes' Feast</item>
+	<item>Investiture of Flame</item>
+	<item>Investiture of Ice</item>
+	<item>Investiture of Stone</item>
+	<item>Investiture of Wind</item>
+	<item>Move Earth</item>
+	<item>Primordial Ward</item>
+	<item>Sunbeam	6th	Evocation</item>
+	<item>Transport via Plants</item>
+	<item>Wall of Thorns</item>
+	<item>Wind Walk</item>
+	<item>Fire Storm</item>
+	<item>Mirage Arcane</item>
+	<item>Plane Shift</item>
+	<item>Regenerate</item>
+	<item>Reverse Gravity</item>
+	<item>Whirlwind</item>
+	<item>Animal Shapes</item>
+	<item>Antipathy/Sympathy</item>
+	<item>Control Weather</item>
+	<item>Earthquake</item>
+	<item>Feeblemind</item>
+	<item>Sunburst</item>
+	<item>Tsunami</item>
+	<item>Foresight</item>
+	<item>Shapechange</item>
+	<item>Storm of Vengeance</item>
+	<item>True Resurrection</item>
+</string-array>

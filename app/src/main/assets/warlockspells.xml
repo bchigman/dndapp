@@ -1,0 +1,86 @@
+<string-array name="warlockspells">
+	<item>Blade Ward</item>
+	<item>Chill Touch</item>
+	<item>Create Bonfire</item>
+	<item>Eldritch Blast</item>
+	<item>Friends</item>
+	<item>Frostbite</item>
+	<item>Mage Hand</item>
+	<item>Magic Stone</item>
+	<item>Minor Illusion</item>
+	<item>Poison Spray</item>
+	<item>Prestidigitation</item>
+	<item>Thunderclap</item>
+	<item>True Strike</item>
+	<item>Armor of Agathys</item>
+	<item>Arms of Hadar</item>
+	<item>Charm Person</item>
+	<item>Comprehend Languages</item>
+	<item>Expeditious Retreat</item>
+	<item>Hellish Rebuke</item>
+	<item>Hex	1st	Enchantment</item>
+	<item>Illusory Script</item>
+	<item>Protection from Evil and Good</item>
+	<item>Unseen Servant</item>
+	<item>Witch Bolt</item>
+	<item>Cloud of Daggers</item>
+	<item>Crown of Madness</item>
+	<item>Darkness</item>
+	<item>Earthbind</item>
+	<item>Enthrall</item>
+	<item>Hold Person</item>
+	<item>Invisibility</item>
+	<item>Mirror Image</item>
+	<item>Misty Step</item>
+	<item>Ray of Enfeeblement</item>
+	<item>Shatter</item>
+	<item>Spider Climb</item>
+	<item>Suggestion</item>
+	<item>Counterspell</item>
+	<item>Dispel Magic</item>
+	<item>Fear</item>
+	<item>Fly</item>
+	<item>Gaseous Form</item>
+	<item>Hunger of Hadar</item>
+	<item>Hypnotic Pattern</item>
+	<item>Magic Circle</item>
+	<item>Major Image</item>
+	<item>Remove Curse</item>
+	<item>Tongues</item>
+	<item>Vampiric Touch</item>
+	<item>Banishment</item>
+	<item>Blight</item>
+	<item>Dimension Door</item>
+	<item>Elemental Bane</item>
+	<item>Hallucinatory Terrain</item>
+	<item>Contact Other Plane</item>
+	<item>Dream</item>
+	<item>Hold Monster</item>
+	<item>Scrying</item>
+	<item>Arcane Gate</item>
+	<item>Circle of Death</item>
+	<item>Conjure Fey</item>
+	<item>Create Undead</item>
+	<item>Eyebite	6th	Necromancy</item>
+	<item>Flesh to Stone</item>
+	<item>Investiture of Flame</item>
+	<item>Investiture of Ice</item>
+	<item>Investiture of Stone</item>
+	<item>Investiture of Wind</item>
+	<item>Mass Suggestion</item>
+	<item>True Seeing</item>
+	<item>Etherealness</item>
+	<item>Finger of Death</item>
+	<item>Forcecage</item>
+	<item>Plane Shift</item>
+	<item>Demiplane</item>
+	<item>Dominate Monster</item>
+	<item>Feeblemind</item>
+	<item>Glibness</item>
+	<item>Power Word Stun</item>
+	<item>Astral Projection</item>
+	<item>Foresight</item>
+	<item>Imprisonment</item>
+	<item>Power Word Kill</item>
+	<item>True Polymorph</item>
+</string-array>
