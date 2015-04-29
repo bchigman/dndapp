@@ -1,0 +1,164 @@
+<resources>
+	<string-array name="sorcererspells">
+		<item>Acid Splash</item>
+		<item>Blade Ward</item>
+		<item>Chill Touch</item>
+		<item>Control Flames</item>
+		<item>Create Bonfire</item>
+		<item>Dancing Lights</item>
+		<item>Fire Bolt</item>
+		<item>Friends</item>
+		<item>Frostbite</item>
+		<item>Gust</item>
+		<item>Light</item>
+		<item>Mage Hand</item>
+		<item>Mending</item>
+		<item>Message</item>
+		<item>Minor Illusion</item>
+		<item>Mold Earth</item>
+		<item>Poison Spray</item>
+		<item>Prestidigitation</item>
+		<item>Ray of Frost</item>
+		<item>Shape Water</item>
+		<item>Shocking Grasp</item>
+		<item>Thunderclap</item>
+		<item>True Strike</item>
+		<item>Burning Hands</item>
+		<item>Catapult</item>
+		<item>Charm Person</item>
+		<item>Chromatic Orb</item>
+		<item>Color Spray</item>
+		<item>Comprehend Languages</item>
+		<item>Detect Magic</item>
+		<item>Disguise Self</item>
+		<item>Earth Tremor</item>
+		<item>Expeditious Retreat</item>
+		<item>False Life</item>
+		<item>Feather Fall</item>
+		<item>Fog Cloud</item>
+		<item>Ice Knife</item>
+		<item>Jump</item>
+		<item>Mage Armor</item>
+		<item>Magic Missile</item>
+		<item>Ray of Sickness</item>
+		<item>Shield</item>
+		<item>Silent Image</item>
+		<item>Sleep</item>
+		<item>Thunderwave</item>
+		<item>Witch Bolt</item>
+		<item>Aganazzar\'s Scorcher</item>
+		<item>Alter Self</item>
+		<item>Blindness/Deafness</item>
+		<item>Blur</item>
+		<item>Cloud of Daggers</item>
+		<item>Crown of Madness</item>
+		<item>Darkness</item>
+		<item>Darkvision</item>
+		<item>Detect Thoughts</item>
+		<item>Dust Devil</item>
+		<item>Earthbind</item>
+		<item>Enhance Ability</item>
+		<item>Enlarge/Reduce</item>
+		<item>Gust of Wind</item>
+		<item>Hold Person</item>
+		<item>Invisibility</item>
+		<item>Knock</item>
+		<item>Levitate</item>
+		<item>Maximilian\'s Earthen Grasp</item>
+		<item>Mirror Image</item>
+		<item>Misty Step</item>
+		<item>Phantasmal Force</item>
+		<item>Pyrotechnics</item>
+		<item>Scorching Ray</item>
+		<item>See Invisibility</item>
+		<item>Shatter</item>
+		<item>Snilloc\'s Snowball Swarm</item>
+		<item>Spider Climb</item>
+		<item>Suggestion</item>
+		<item>Warding Wind</item>
+		<item>Web</item>
+		<item>Blink</item>
+		<item>Clairvoyance</item>
+		<item>Counterspell</item>
+		<item>Daylight</item>
+		<item>Dispel Magic</item>
+		<item>Erupting Earth</item>
+		<item>Fear</item>
+		<item>Fireball</item>
+		<item>Flame Arrows</item>
+		<item>Fly</item>
+		<item>Gaseous Form</item>
+		<item>Haste</item>
+		<item>Hypnotic Pattern</item>
+		<item>Lightning Bolt</item>
+		<item>Major Image</item>
+		<item>Melf\'s Minute Meteors</item>
+		<item>Protection from Energy</item>
+		<item>Sleet Storm</item>
+		<item>Slow</item>
+		<item>Stinking Cloud</item>
+		<item>Tongues</item>
+		<item>Wall of Water</item>
+		<item>Water Breathing</item>
+		<item>Water Walk</item>
+		<item>Banishment</item>
+		<item>Blight</item>
+		<item>Confusion</item>
+		<item>Dimension Door</item>
+		<item>Dominate Beast</item>
+		<item>Greater Invisibility</item>
+		<item>Ice Storm</item>
+		<item>Polymorph</item>
+		<item>Stoneskin</item>
+		<item>Storm Sphere</item>
+		<item>Vitriolic Sphere</item>
+		<item>Wall of Fire</item>
+		<item>Watery Sphere</item>
+		<item>Animate Objects</item>
+		<item>Cloudkill</item>
+		<item>Cone of Cold</item>
+		<item>Control Winds</item>
+		<item>Creation</item>
+		<item>Dominate Person</item>
+		<item>Hold Monster</item>
+		<item>Immolation</item>
+		<item>Insect Plague</item>
+		<item>Seeming</item>
+		<item>Telekinesis</item>
+		<item>Teleportation Circle</item>
+		<item>Wall of Stone</item>
+		<item>Arcane Gate</item>
+		<item>Chain Lightning</item>
+		<item>Circle of Death</item>
+		<item>Disintegrate</item>
+		<item>Eyebite</item>
+		<item>Globe of Invulnerability</item>
+		<item>Investiture of Flame</item>
+		<item>Investiture of Ice</item>
+		<item>Investiture of Stone</item>
+		<item>Investiture of Wind</item>
+		<item>Mass Suggestion</item>
+		<item>Move Earth</item>
+		<item>Sunbeam</item>
+		<item>True Seeing</item>
+		<item>Delayed Blast Fireball</item>
+		<item>Etherealness</item>
+		<item>Finger of Death</item>
+		<item>Fire Storm</item>
+		<item>Plane Shift</item>
+		<item>Prismatic Spray</item>
+		<item>Reverse Gravity</item>
+		<item>Teleport</item>
+		<item>Abi-Dalzim\'s Horrid Wilting</item>
+		<item>Dominate Monster</item>
+		<item>Earthquake</item>
+		<item>Incendiary Cloud</item>
+		<item>Power Word Stun</item>
+		<item>Sunburst</item>
+		<item>Gate</item>
+		<item>Meteor Swarm</item>
+		<item>Power Word Kill</item>
+		<item>Time Stop</item>
+		<item>Wish</item>
+	</string-array>
+</resources>

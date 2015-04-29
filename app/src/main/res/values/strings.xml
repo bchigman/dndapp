@@ -28,6 +28,7 @@
     <string name="next_page_button_string">Next Page</string>
 
     <string-array name="class_list">
+        <item>""</item>
         <item>Barbarian</item>
         <item>Bard</item>
         <item>Cleric</item>

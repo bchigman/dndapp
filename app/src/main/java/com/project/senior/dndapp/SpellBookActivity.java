@@ -17,6 +17,7 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.List;
 
 
@@ -42,6 +43,18 @@ public class SpellBookActivity extends ActionBarActivity {
             listView.setAdapter(listAdapter);
             EditText searchText = (EditText) findViewById(R.id.spellbook_searchbar);
             searchText.addTextChangedListener(new SpellbookTextWatcher(this, listAdapter));
+
+            classSpinner.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    Spinner spinner = (Spinner) view;
+                    List<String> classSpells;
+                    switch (spinner.getSelectedItem().toString()){
+                        case "Bard":
+                            classSpells = Arrays.asList(parent.getContext().getResources().getStringArray(R.array.bardspells));
+                    }
+                }
+            });
 
             listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
