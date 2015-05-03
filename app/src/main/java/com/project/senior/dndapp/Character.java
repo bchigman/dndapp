@@ -8,34 +8,35 @@ import java.util.ArrayList;
  */
 public class Character {
 
-    private String name;
-    private String race;
+    private int _id;
+    private String _name;
+    private String _race;
+    private int _level;
     private PlayerClass playerClass;
     private ArrayList<Integer> statsArray;
     private ArrayList<Spell> charaterSpells;
 
     public Character(String name){
-        this.name = name;
-        this.race = "";
-        this.playerClass = new PlayerClass();
+        this._name = name;
+        this._level = 1;
         this.statsArray = new ArrayList<>();
-        this.charaterSpells = new ArrayList<Spell>();
+        this.charaterSpells = new ArrayList<>();
     }
 
     public String getName(){
-        return this.name;
+        return this._name;
     }
 
     public void setName(String name){
-        this.name = name;
+        this._name = name;
     }
 
-    public String getRace(){
-        return this.race;
+    public int get_id() {
+        return _id;
     }
 
-    public void setRace(String race){
-        this.race = race;
+    public void set_id(int _id) {
+        this._id = _id;
     }
 
     public PlayerClass getPlayerClass(){
@@ -61,5 +62,33 @@ public class Character {
         for( Integer currentInt : stats){
             this.statsArray.add(currentInt);
         }
+    }
+
+    public ArrayList<Spell> getCharaterSpells() {
+        return charaterSpells;
+    }
+
+    public void setCharaterSpells(ArrayList<Spell> charaterSpells) {
+        this.charaterSpells = charaterSpells;
+    }
+
+    public String get_race() {
+        return _race;
+    }
+
+    public void set_race(String _race) {
+        this._race = _race;
+    }
+
+    public int get_level() {
+        return _level;
+    }
+
+    public void set_level(int _level) {
+        this._level = _level;
+    }
+
+    public String toString(){
+        return this._id + ") " + this._name + ", level " + this._level + " " + this._race + " "+ this.playerClass.getClassName();
     }
 }

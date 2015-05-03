@@ -43,6 +43,15 @@ public class MenuActivity extends ActionBarActivity {
             }
         });
 
+        Button savedChar = (Button) findViewById(R.id.saved_char_button);
+        savedChar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuActivity.this, SavedCharacterActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 

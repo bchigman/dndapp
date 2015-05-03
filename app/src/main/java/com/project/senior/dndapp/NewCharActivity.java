@@ -3,14 +3,14 @@ package com.project.senior.dndapp;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.Spinner;
 import android.widget.EditText;
 import android.widget.Button;
+import android.widget.Toast;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -18,11 +18,19 @@ import java.util.Arrays;
 public class NewCharActivity extends ActionBarActivity {
 
     private static final String TAG = "DnDApp";
+    DBHandler dbHandler;
+    EditText charName;
+    Spinner classSpinner;
+    Spinner raceSpinner;
+    Button nextPage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_char);
+        dbHandler = new DBHandler(this);
+        charName = (EditText) findViewById(R.id.char_name);
+        nextPage = (Button) findViewById(R.id.next_page_button);
 
         final String[] STANDARD_ARRAY = {"15", "14", "13", "12", "10", "8"};
         final Button[] BUTTONS = {(Button)findViewById(R.id.button1), (Button) findViewById(R.id.button2), (Button) findViewById(R.id.button3),
@@ -35,12 +43,12 @@ public class NewCharActivity extends ActionBarActivity {
         EDITTEXTS.add((EditText)findViewById(R.id.wisdom_val));
         EDITTEXTS.add((EditText)findViewById(R.id.charisma_val));
 
-        Spinner classSpinner = (Spinner) findViewById(R.id.class_spinner);
+        classSpinner = (Spinner) findViewById(R.id.class_spinner);
         ArrayAdapter<CharSequence> classAdapter = ArrayAdapter.createFromResource(this, R.array.class_list, android.R.layout.simple_spinner_item);
         classAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         classSpinner.setAdapter(classAdapter);
 
-        Spinner raceSpinner = (Spinner) findViewById(R.id.race_spinner);
+        raceSpinner = (Spinner) findViewById(R.id.race_spinner);
         ArrayAdapter<CharSequence> raceAdapter = ArrayAdapter.createFromResource(this, R.array.race_list, android.R.layout.simple_spinner_item);
         raceAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         raceSpinner.setAdapter(raceAdapter);
@@ -70,8 +78,8 @@ public class NewCharActivity extends ActionBarActivity {
                 for(EditText et : EDITTEXTS){
                     et.setText("");
                 }
-                for(int i=0;i<BUTTONS.length;i++){
-                    BUTTONS[i].setEnabled(true);
+                for(Button button : BUTTONS){
+                    button.setEnabled(true);
                 }
             }
         });
@@ -95,6 +103,22 @@ public class NewCharActivity extends ActionBarActivity {
             BUTTONS[i].setOnClickListener(clickListener);
         }
 
+        nextPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(v.getContext(), charName.getText().toString() + " : " + classSpinner.getSelectedItem().toString(), Toast.LENGTH_LONG).show();
+                Character character = new Character(charName.getText().toString());
+                character.set_race(raceSpinner.getSelectedItem().toString());
+                character.setPlayerClass(new PlayerClass(classSpinner.getSelectedItem().toString()));
+                ArrayList<Integer> stats = new ArrayList<>();
+                for(EditText et: EDITTEXTS){
+                    stats.add(Integer.parseInt(et.getText().toString()));
+                }
+                character.setStatsArray(stats);
+                dbHandler.addCharacter(character);
+                printDatabase();
+            }
+        });
     }
 
     public String randomizeStatButton(){
@@ -106,27 +130,9 @@ public class NewCharActivity extends ActionBarActivity {
         return Integer.toString(rolls[1]+rolls[2]+rolls[3]);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_new_char, menu);
-        return true;
-    }
-
-
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
+    public void printDatabase (){
+        Toast.makeText(this, "Printing", Toast.LENGTH_LONG).show();
+        String dbString = dbHandler.dbToList().toString();
+        Toast.makeText(this, dbString, Toast.LENGTH_LONG).show();
     }
 }

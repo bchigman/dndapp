@@ -30,9 +30,12 @@ public class SpellAdapter extends ArrayAdapter<Spell> {
         return view;
     }
 
-    public void clearAdapter()
-    {
+    public void clearAdapter() {
         this.clear();
         notifyDataSetChanged();
+    }
+
+    public String toString(){
+        return "SpellAdapter";
     }
 }

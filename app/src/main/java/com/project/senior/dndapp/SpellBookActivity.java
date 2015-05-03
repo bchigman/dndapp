@@ -17,7 +17,6 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.List;
 
 
@@ -37,24 +36,13 @@ public class SpellBookActivity extends ActionBarActivity {
             AssetManager assets = this.getAssets();
             BufferedReader reader = new BufferedReader(new InputStreamReader(assets.open("spellbook.json")));
             Gson gson = new Gson();
-            List<Spell> spells = gson.fromJson(reader, new TypeToken<List<Spell>>(){}.getType());
+            final List<Spell> spells = gson.fromJson(reader, new TypeToken<List<Spell>>(){}.getType());
             SpellAdapter listAdapter = new SpellAdapter(this, spells);
             ListView listView = (ListView) findViewById(R.id.spellbook_listView);
             listView.setAdapter(listAdapter);
             EditText searchText = (EditText) findViewById(R.id.spellbook_searchbar);
-            searchText.addTextChangedListener(new SpellbookTextWatcher(this, listAdapter));
-
-            classSpinner.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                @Override
-                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    Spinner spinner = (Spinner) view;
-                    List<String> classSpells;
-                    switch (spinner.getSelectedItem().toString()){
-                        case "Bard":
-                            classSpells = Arrays.asList(parent.getContext().getResources().getStringArray(R.array.bardspells));
-                    }
-                }
-            });
+            searchText.addTextChangedListener(new SpellbookTextWatcher(this, listAdapter, spells));
+            classSpinner.setOnItemSelectedListener(new ClassSpinnerListener(this, listAdapter, spells));
 
             listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
@@ -76,24 +64,4 @@ public class SpellBookActivity extends ActionBarActivity {
 
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_spell_book, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
 }

@@ -39,6 +39,7 @@
                 android:layout_margin="5dp"/>
 
             <EditText
+                android:id="@+id/char_name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight=".70"
@@ -348,7 +349,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".5"
-                    android:text="@string/next_page_button_string"/>
+                    android:text="@string/next_page_button_string"
+                    android:onClick="nextButtonClicked" />
 
                 <Button
                     android:id="@+id/clear_stats_button"

@@ -3,14 +3,17 @@ package com.project.senior.dndapp;
 import java.util.ArrayList;
 
 /**
+ * PlayerClass Object definition
  * Created by Ben on 4/2/2015.
  */
 public class PlayerClass {
 
+    private String className;
     private ArrayList<Integer> statPerks;
     private ArrayList<String> featPerks;
 
-    public PlayerClass(){
+    public PlayerClass(String name){
+        this.className = name;
         this.statPerks = new ArrayList<>();
         this.featPerks = new ArrayList<>();
     }
@@ -35,5 +38,13 @@ public class PlayerClass {
         for(String item : featPerks){
             this.featPerks.add(item);
         }
+    }
+
+    public String getClassName() {
+        return className;
+    }
+
+    public void setClassName(String className) {
+        this.className = className;
     }
 }
