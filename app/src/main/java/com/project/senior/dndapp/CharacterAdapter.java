@@ -26,7 +26,7 @@ public class CharacterAdapter extends ArrayAdapter<Character>{
         View view = inflater.inflate(R.layout.character_row, parent, false);
         Character singleCharacter = getItem(position);
         TextView textView = (TextView) view.findViewById(R.id.character_row_title);
-        textView.setText(singleCharacter.toString());
+        textView.setText(singleCharacter.get_id() + ") " + singleCharacter.toString());
 
         TextView desc = (TextView) view.findViewById(R.id.character_row_description);
         desc.setText(singleCharacter.getStatsArray().toString());

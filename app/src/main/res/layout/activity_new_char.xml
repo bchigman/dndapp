@@ -1,370 +1,159 @@
-<ScrollView
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:background="#006699"
     tools:context="com.project.senior.dndapp.NewCharActivity">
 
-    <RelativeLayout
+    <TextView
+        android:id="@+id/new_char_banner"
+        android:text="@string/new_char_banner_string"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="#006699">
+        android:textSize="24sp"
+        android:textColor="#F0F0F0"
+        android:gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:id="@+id/name_row"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/new_char_banner"
+        android:layout_marginTop="5dp">
 
         <TextView
-            android:text="@string/new_char_banner_string"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:textSize="24sp"
+            android:layout_weight=".3"
+            android:text="@string/name_form_string"
             android:textColor="#F0F0F0"
-            android:id="@+id/new_char_banner"/>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/new_char_banner"
-            android:layout_marginTop="5dp"
-            android:id="@+id/name_row">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight=".3"
-                android:text="@string/name_form_string"
-                android:textColor="#F0F0F0"
-                android:textSize="20sp"
-                android:layout_margin="5dp"/>
-
-            <EditText
-                android:id="@+id/char_name"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight=".70"
-                android:layout_margin="5dp"
-                android:inputType="text"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/race_row"
-            android:layout_marginTop="5dp"
-            android:id="@+id/class_row">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight=".3"
-                android:text="@string/class_form_string"
-                android:textColor="#F0F0F0"
-                android:textSize="20sp"
-                android:layout_margin="5dp" />
-
-            <Spinner
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/class_spinner"
-                android:layout_weight=".7"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/name_row"
-            android:layout_marginTop="5dp"
-            android:id="@+id/race_row">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight=".3"
-                android:text="@string/race_form_string"
-                android:textColor="#F0F0F0"
-                android:textSize="20sp"
-                android:layout_margin="5dp" />
-
-            <Spinner
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/race_spinner"
-                android:layout_weight=".7"/>
-
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/stat_grp_label"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:text="@string/stat_grp_label_string"
             android:textSize="20sp"
+            android:layout_margin="5dp"/>
+
+        <EditText
+            android:id="@+id/char_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".70"
+            android:layout_margin="5dp"
+            android:inputType="text"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/race_row"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_row"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:text="@string/race_form_string"
             android:textColor="#F0F0F0"
-            android:layout_below="@+id/class_row"/>
+            android:textSize="20sp"
+            android:layout_margin="5dp" />
 
-        <CheckBox
-            android:id="@+id/standard_array_check"
-            android:layout_width="fill_parent"
+        <Spinner
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/standard_array_string"
-            android:layout_below="@+id/stat_grp_label"
-            android:checked="true"/>
+            android:id="@+id/race_spinner"
+            android:layout_weight=".7"/>
 
-        <RadioGroup
-            android:id="@+id/stat_radio_grp"
-            android:layout_width="fill_parent"
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/race_descriptor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/race_row"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/race_descriptor"
+        android:layout_marginTop="5dp"
+        android:id="@+id/subrace_row">
+
+        <TextView
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:orientation="horizontal"
-            android:layout_below="@+id/standard_array_check">
+            android:layout_weight=".3"
+            android:text="@string/subrace_form_string"
+            android:textColor="#F0F0F0"
+            android:textSize="20sp"
+            android:layout_margin="5dp" />
 
-            <RadioButton
-                android:id="@+id/optimal_radio"
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:text="@string/optimal_string"/>
-
-            <RadioButton
-                android:id="@+id/random_radio"
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:text="@string/random_string"/>
-
-            <RadioButton
-                android:id="@+id/manual_radio"
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:text="@string/manual_string"
-                android:checked="true"/>
-
-        </RadioGroup>
-
-        <LinearLayout
-            android:id="@+id/stat_chart"
-            android:orientation="vertical"
-            android:layout_width="fill_parent"
+        <Spinner
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/stat_radio_grp">
+            android:id="@+id/subrace_spinner"
+            android:layout_weight=".7"/>
 
-            <LinearLayout
-                android:id="@+id/strength_row"
-                android:orientation="horizontal"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
+    </LinearLayout>
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight=".33"
-                    android:text="@string/strength_string"/>
+    <TextView
+        android:id="@+id/subrace_descriptor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subrace_row"/>
 
-                <EditText
-                    android:id="@+id/strength_val"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight=".33"
-                    android:inputType="none"
-                    android:clickable="false"
-                    android:cursorVisible="false"
-                    android:focusableInTouchMode="false"/>
+    <LinearLayout
+        android:id="@+id/class_row"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subrace_descriptor"
+        android:layout_marginTop="5dp">
 
-                <Button
-                    android:id="@+id/button1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight=".33"
-                    android:text="15"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:text="@string/class_form_string"
+            android:textColor="#F0F0F0"
+            android:textSize="20sp"
+            android:layout_margin="5dp" />
 
-            </LinearLayout>
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/class_spinner"
+            android:layout_weight=".7"/>
 
-            <LinearLayout
-                android:id="@+id/dexterity_row"
-                android:orientation="horizontal"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
+    </LinearLayout>
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight=".33"
-                    android:text="@string/dexterity_string"/>
+    <TextView
+        android:id="@+id/class_descriptor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/class_row"/>
 
-                <EditText
-                    android:id="@+id/dexterity_val"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight=".33"
-                    android:inputType="none"
-                    android:clickable="false"
-                    android:cursorVisible="false"
-                    android:focusableInTouchMode="false"/>
+    <LinearLayout
+        android:id="@+id/race_submit_row"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
 
-                <Button
-                    android:id="@+id/button2"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight=".33"
-                    android:text="14"/>
+        <Button
+            android:id="@+id/race_next_page_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="@string/next_page_button_string"/>
 
-            </LinearLayout>
+    </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/constitution_row"
-                android:orientation="horizontal"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight=".33"
-                    android:text="@string/constitution_string"/>
-
-                <EditText
-                    android:id="@+id/constitution_val"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight=".33"
-                    android:inputType="none"
-                    android:clickable="false"
-                    android:cursorVisible="false"
-                    android:focusableInTouchMode="false"/>
-
-                <Button
-                    android:id="@+id/button3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight=".33"
-                    android:text="13"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/intelligence_row"
-                android:orientation="horizontal"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight=".33"
-                    android:text="@string/intelligence_string"/>
-
-                <EditText
-                    android:id="@+id/intelligence_val"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight=".33"
-                    android:inputType="none"
-                    android:clickable="false"
-                    android:cursorVisible="false"
-                    android:focusableInTouchMode="false"/>
-
-                <Button
-                    android:id="@+id/button4"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight=".33"
-                    android:text="12"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/wisdom_row"
-                android:orientation="horizontal"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight=".33"
-                    android:text="@string/wisdom_string"/>
-
-                <EditText
-                    android:id="@+id/wisdom_val"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight=".33"
-                    android:inputType="none"
-                    android:clickable="false"
-                    android:cursorVisible="false"
-                    android:focusableInTouchMode="false"/>
-
-                <Button
-                    android:id="@+id/button5"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight=".33"
-                    android:text="10"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/charisma_row"
-                android:orientation="horizontal"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight=".33"
-                    android:text="@string/charisma_string"/>
-
-                <EditText
-                    android:id="@+id/charisma_val"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight=".33"
-                    android:inputType="none"
-                    android:clickable="false"
-                    android:cursorVisible="false"
-                    android:focusableInTouchMode="false"/>
-
-                <Button
-                    android:id="@+id/button6"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight=".33"
-                    android:text="8"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/character_submit_row"
-                android:orientation="horizontal"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
-
-                <Button
-                    android:id="@+id/next_page_button"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight=".5"
-                    android:text="@string/next_page_button_string"
-                    android:onClick="nextButtonClicked" />
-
-                <Button
-                    android:id="@+id/clear_stats_button"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight=".5"
-                    android:text="@string/clear_stat_button_string"/>
-
-            </LinearLayout>
-
-
-        </LinearLayout>
-
-    </RelativeLayout>
-
-</ScrollView>
+</RelativeLayout>
 

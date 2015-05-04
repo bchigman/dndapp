@@ -10,17 +10,32 @@ public class Character {
 
     private int _id;
     private String _name;
-    private String _race;
+    private PlayerRace _race;
     private int _level;
+    private int _hitpointMax;
+    private int _currentHitpoints;
     private PlayerClass playerClass;
     private ArrayList<Integer> statsArray;
     private ArrayList<Spell> charaterSpells;
 
+    public Character(){
+        this._name = "";
+        this._level = 1;
+        this._hitpointMax = 10;
+        this._currentHitpoints = 10;
+        this.statsArray = new ArrayList<>();
+        this.charaterSpells = new ArrayList<>();
+        this._race = new PlayerRace("");
+    }
+
     public Character(String name){
         this._name = name;
         this._level = 1;
+        this._hitpointMax = 10;
+        this._currentHitpoints = _hitpointMax;
         this.statsArray = new ArrayList<>();
         this.charaterSpells = new ArrayList<>();
+        this._race = new PlayerRace("");
     }
 
     public String getName(){
@@ -72,11 +87,11 @@ public class Character {
         this.charaterSpells = charaterSpells;
     }
 
-    public String get_race() {
+    public PlayerRace get_race() {
         return _race;
     }
 
-    public void set_race(String _race) {
+    public void set_race(PlayerRace _race) {
         this._race = _race;
     }
 
@@ -88,7 +103,25 @@ public class Character {
         this._level = _level;
     }
 
-    public String toString(){
-        return this._id + ") " + this._name + ", level " + this._level + " " + this._race + " "+ this.playerClass.getClassName();
+    public int get_hitpointMax() {
+        return _hitpointMax;
     }
+
+    public void set_hitpointMax(int _hitpointMax) {
+        this._hitpointMax = _hitpointMax;
+    }
+
+    public int get_currentHitpoints() {
+        return _currentHitpoints;
+    }
+
+    public void set_currentHitpoints(int _currentHitpoints) {
+        this._currentHitpoints = _currentHitpoints;
+    }
+
+    //To String
+    public String toString(){
+        return this._name + ", level " + this._level + " " + this._race + " "+ this.playerClass.getClassName();
+    }
+
 }

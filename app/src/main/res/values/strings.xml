@@ -71,5 +71,19 @@
     <string name="title_activity_spell_book">SpellBookActivity</string>
     <string name="spellbook_sort_text">Search:</string>
     <string name="title_activity_saved_character">SavedCharacterActivity</string>
+    <string name="title_activity_new_character_spells">NewCharacterSpells</string>
+    <string name="subrace_form_string">Subrace:</string>
+
+    <string-array name="dwarf_race_list">
+        <item>Hill Dwarf</item>
+        <item>Mountain Dwarf</item>
+    </string-array>
+
+    <string-array name="elf_race_list">
+        <item>High Elf</item>
+        <item>Wood Elf</item>
+        <item>Dark Elf (Drow)</item>
+    </string-array>
+    <string name="title_activity_stat_distribution">StatDistributionActivity</string>
 
 </resources>
