@@ -117,8 +117,9 @@ public class StatDistributionActivity extends ActionBarActivity {
                 for (EditText et : editTexts) {
                     character.getStatsArray().add(Integer.parseInt(et.getText().toString()));
                 }
+                Log.i(TAG, character.get_race().toString());
                 dbHandler.updateCharacter(character);
-                printDatabase();
+                //printDatabase();
                 Intent intent = new Intent(StatDistributionActivity.this, NewCharacterSpells.class);
                 intent.putExtra("character", new Gson().toJson(character));
                 startActivity(intent);

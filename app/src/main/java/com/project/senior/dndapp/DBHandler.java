@@ -120,7 +120,7 @@ public class DBHandler extends SQLiteOpenHelper{
         character.setPlayerClass(new PlayerClass(c.getString(5)));
         character.set_id(id);
         String stats = c.getString(6);
-        //Log.i(TAG, stats);
+        Log.i(TAG, stats);
         if(!stats.equals("[]")) {
             stats = stats.substring(1, stats.length() - 1);
             String[] statsarr = stats.trim().split(", ");

@@ -21,7 +21,7 @@ public class PlayerRace {
 
     //Constructor
     public PlayerRace(String name){
-        this.name = name;
+        this.name = name.trim();
         this.subrace = "";
 
         switch(this.name){
@@ -56,7 +56,7 @@ public class PlayerRace {
                 this.languages = new String[]{"Common","Elvish"};
                 break;
             default:
-                Log.i(TAG, "Incorrect class string");
+                Log.i(TAG, "Incorrect race string");
         }
     }
 

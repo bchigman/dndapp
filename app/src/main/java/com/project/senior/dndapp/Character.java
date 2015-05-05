@@ -15,7 +15,7 @@ public class Character {
     private int _hitpointMax;
     private int _currentHitpoints;
     private PlayerClass playerClass;
-    private ArrayList<Integer> statsArray;
+    private ArrayList<Integer> _statsArray;
     private ArrayList<Spell> charaterSpells;
 
     public Character(){
@@ -23,7 +23,7 @@ public class Character {
         this._level = 1;
         this._hitpointMax = 10;
         this._currentHitpoints = 10;
-        this.statsArray = new ArrayList<>();
+        this._statsArray = new ArrayList<>();
         this.charaterSpells = new ArrayList<>();
         this._race = new PlayerRace("");
     }
@@ -33,7 +33,7 @@ public class Character {
         this._level = 1;
         this._hitpointMax = 10;
         this._currentHitpoints = _hitpointMax;
-        this.statsArray = new ArrayList<>();
+        this._statsArray = new ArrayList<>();
         this.charaterSpells = new ArrayList<>();
         this._race = new PlayerRace("");
     }
@@ -63,19 +63,19 @@ public class Character {
     }
 
     public ArrayList<Integer> getStatsArray(){
-        return this.statsArray;
+        return this._statsArray;
     }
 
     public void setStatsArray(int[] stats){
         for(int i : stats){
-            this.statsArray.add(i);
+            this._statsArray.add(i);
         }
     }
 
     public void setStatsArray(ArrayList<Integer> stats){
-        this.statsArray = new ArrayList<>();
+        this._statsArray = new ArrayList<>();
         for( Integer currentInt : stats){
-            this.statsArray.add(currentInt);
+            this._statsArray.add(currentInt);
         }
     }
 
