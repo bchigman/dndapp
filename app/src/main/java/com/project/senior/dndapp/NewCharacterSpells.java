@@ -21,7 +21,7 @@ public class NewCharacterSpells extends ActionBarActivity {
         Character character = new Gson().fromJson(charString, Character.class);
 
         TextView test = (TextView) findViewById(R.id.test_char_xfer);
-        test.setText(character.toString() + "\n" + character.getStatsArray().toString());
+        test.setText(character.toString());
     }
 
 

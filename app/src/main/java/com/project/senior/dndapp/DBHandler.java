@@ -82,6 +82,7 @@ public class DBHandler extends SQLiteOpenHelper{
         cv.put(COLUMN_CLASS, character.getPlayerClass().getClassName());
         cv.put(COLUMN_STATS, character.getStatsArray().toString());
         db.update(TABLE_CHARACTERS, cv, String.format("%s = ?", COLUMN_ID), new String[]{""+character.get_id()});
+        db.close();
     }
 
     public void dropTable(){
@@ -91,7 +92,7 @@ public class DBHandler extends SQLiteOpenHelper{
     }
 
     public List<Character> dbToList(){
-        String dbString = "";
+
         List<Character> chars = new ArrayList<>();
         SQLiteDatabase db = getWritableDatabase();
         String query = "SELECT * FROM " + TABLE_CHARACTERS + " WHERE 1;";

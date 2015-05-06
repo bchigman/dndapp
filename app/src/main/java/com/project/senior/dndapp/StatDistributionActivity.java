@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,6 +18,8 @@ import com.google.gson.Gson;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 
 public class StatDistributionActivity extends ActionBarActivity {
@@ -28,6 +31,7 @@ public class StatDistributionActivity extends ActionBarActivity {
     Character character;
     Button nextPage;
     DBHandler dbHandler;
+    RadioGroup group;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +40,8 @@ public class StatDistributionActivity extends ActionBarActivity {
 
         nextPage = (Button) findViewById(R.id.stats_next_page_button);
         dbHandler = new DBHandler(this);
+        group = (RadioGroup) findViewById(R.id.stat_radio_grp);
+        List<Character> charList = dbHandler.dbToList();
 
         String charString = "";
         Bundle extras = getIntent().getExtras();
@@ -43,8 +49,11 @@ public class StatDistributionActivity extends ActionBarActivity {
             charString = extras.getString("character");
         }
         character = new Gson().fromJson(charString, Character.class);
+        character.set_id(charList.get(charList.size() - 1).get_id());
         TextView displayCharacter = (TextView) findViewById(R.id.char_display_row_stats_page);
-        displayCharacter.setText(character.toString());
+        displayCharacter.setText(character.toString() +
+                " \n\nPrimary Stat: " + character.getPlayerClass().getPrimaryAbility() +
+                " \nSaving Throws: " + character.getPlayerClass().getSavingThrows());
 
         standardArray = new String[]{"15", "14", "13", "12", "10", "8"};
         buttons = new Button[]{(Button) findViewById(R.id.button1), (Button) findViewById(R.id.button2), (Button) findViewById(R.id.button3),
@@ -56,10 +65,6 @@ public class StatDistributionActivity extends ActionBarActivity {
         editTexts.add((EditText) findViewById(R.id.intelligence_val));
         editTexts.add((EditText) findViewById(R.id.wisdom_val));
         editTexts.add((EditText) findViewById(R.id.charisma_val));
-
-        //for(EditText et: editTexts){
-        //    stats.add(Integer.parseInt(et.getText().toString()));
-        //}
 
         CheckBox standardArrayCheck = (CheckBox) findViewById(R.id.standard_array_check);
         standardArrayCheck.setOnClickListener(new View.OnClickListener() {
@@ -75,6 +80,40 @@ public class StatDistributionActivity extends ActionBarActivity {
                         buttons[i].setText(standardArray[i]);
                     }
                 }
+            }
+        });
+
+        group.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                List<Integer> buttonVals = new ArrayList<>();
+                for (Button b : buttons) {
+                    b.setEnabled(false);
+                    buttonVals.add(Integer.parseInt(b.getText().toString()));
+                }
+
+                if(group.getCheckedRadioButtonId() == R.id.reccomend_radio) {
+                    List<Integer> recommended = Arrays.asList(character.getPlayerClass().getRecommended());
+                    for (int i = 0; i < editTexts.size(); i++) {
+                        editTexts.get(i).setText(""+recommended.get(i));
+                    }
+
+                }
+                else if(group.getCheckedRadioButtonId() == R.id.random_radio){
+                    Collections.shuffle(buttonVals);
+                    for (int i = 0; i < editTexts.size(); i++) {
+                        editTexts.get(i).setText("" + buttonVals.get(i));
+                    }
+                }
+                else{
+                    for(Button b : buttons){
+                        b.setEnabled(true);
+                    }
+                    for(EditText et : editTexts){
+                        et.setText("");
+                    }
+                    Log.i(TAG, "Operating as normal.");
+                 }
             }
         });
 
@@ -113,16 +152,18 @@ public class StatDistributionActivity extends ActionBarActivity {
         nextPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(v.getContext(), character.getName() + " : " + character.get_race(), Toast.LENGTH_LONG).show();
                 for (EditText et : editTexts) {
                     character.getStatsArray().add(Integer.parseInt(et.getText().toString()));
                 }
                 Log.i(TAG, character.get_race().toString());
                 dbHandler.updateCharacter(character);
-                //printDatabase();
-                Intent intent = new Intent(StatDistributionActivity.this, NewCharacterSpells.class);
-                intent.putExtra("character", new Gson().toJson(character));
-                startActivity(intent);
+                Log.i(TAG, ""+!character.getPlayerClass().getClassName().equals("Barbarian"));
+                if(!(character.getPlayerClass().getClassName().equals("Barbarian") || character.getPlayerClass().getClassName().equals("Fighter")
+                        || character.getPlayerClass().getClassName().equals("Rogue") || character.getPlayerClass().getClassName().equals("Monk"))) {
+                    Intent intent = new Intent(StatDistributionActivity.this, NewCharacterSpells.class);
+                    intent.putExtra("character", new Gson().toJson(character));
+                    startActivity(intent);
+                }
                 finish();
             }
         });
@@ -138,13 +179,22 @@ public class StatDistributionActivity extends ActionBarActivity {
     }
 
     public void printDatabase() {
-        toast("Printing");
         String dbString = dbHandler.dbToList().toString();
         toast(dbString);
     }
 
     public void toast(String text) {
         Toast.makeText(this, text, Toast.LENGTH_LONG).show();
+    }
+
+    public int getMax(List<Integer> ints){
+        int max = 0;
+        for(Integer i : ints){
+            if(i > max){
+                max = i;
+            }
+        }
+        return max;
     }
 
     @Override
@@ -156,6 +206,7 @@ public class StatDistributionActivity extends ActionBarActivity {
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+                        dbHandler.deleteCharacter(character.get_id());
                         finish();
                     }
 

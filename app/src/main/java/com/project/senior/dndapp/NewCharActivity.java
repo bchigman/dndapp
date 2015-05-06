@@ -54,6 +54,17 @@ public class NewCharActivity extends ActionBarActivity {
         ArrayAdapter<CharSequence> classAdapter = ArrayAdapter.createFromResource(this, R.array.class_list, android.R.layout.simple_spinner_item);
         classAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         classSpinner.setAdapter(classAdapter);
+        classSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                TextView spinner = (TextView) view;
+                character.setPlayerClass(new PlayerClass(spinner.getText().toString()));
+                TextView classDescriptor = (TextView) findViewById(R.id.class_descriptor);
+                classDescriptor.setText(character.getPlayerClass().getDescription());
+            }
+
+            public void onNothingSelected(AdapterView<?> parent) {}
+        });
 
         raceSpinner = (Spinner) findViewById(R.id.race_spinner);
         ArrayAdapter<CharSequence> raceAdapter = ArrayAdapter.createFromResource(this, R.array.race_list, android.R.layout.simple_spinner_item);
@@ -65,9 +76,11 @@ public class NewCharActivity extends ActionBarActivity {
                 TextView spinner = (TextView) view;
                 character.set_race(new PlayerRace(raceSpinner.getSelectedItem().toString()));
                 subSpinner = (Spinner) findViewById(R.id.subrace_spinner);
+                TextView raceDescription = (TextView) findViewById(R.id.race_descriptor);
                 descriptor = (TextView) findViewById(R.id.subrace_descriptor);
                 switch (spinner.getText().toString()) {
                     case "Dwarf":
+                        raceDescription.setText(character.get_race().getDescription());
                         subRaceAdapter = ArrayAdapter.createFromResource(parent.getContext(), R.array.dwarf_race_list, android.R.layout.simple_spinner_item);
                         subSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                             @Override
@@ -82,7 +95,21 @@ public class NewCharActivity extends ActionBarActivity {
                         });
                         break;
                     case "Elf":
+                        raceDescription.setText(character.get_race().getDescription());
                         subRaceAdapter = ArrayAdapter.createFromResource(parent.getContext(), R.array.elf_race_list, android.R.layout.simple_spinner_item);
+                        subSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                            @Override
+                            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                                if(subSpinner.getSelectedItem().toString().equals("High Elf"))
+                                    descriptor.setText(character.get_race().getBenefits()[0]);
+                                else if(subSpinner.getSelectedItem().toString().equals("Wood Elf"))
+                                    descriptor.setText(character.get_race().getBenefits()[1]);
+                                else
+                                    descriptor.setText(character.get_race().getBenefits()[2]);
+                            }
+
+                            public void onNothingSelected(AdapterView<?> parent) {}
+                        });
                         break;
                     default:
                         Log.i(TAG, "WTF did you do?");
@@ -105,7 +132,7 @@ public class NewCharActivity extends ActionBarActivity {
                 character.get_race().setSubrace(subSpinner.getSelectedItem().toString());
                 character.setPlayerClass(new PlayerClass(classSpinner.getSelectedItem().toString()));
                 dbHandler.addCharacter(character);
-                printDatabase();
+                //printDatabase();
                 Intent intent = new Intent(NewCharActivity.this, StatDistributionActivity.class);
                 intent.putExtra("character", new Gson().toJson(character));
                 startActivity(intent);
