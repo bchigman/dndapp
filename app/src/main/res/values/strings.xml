@@ -87,5 +87,14 @@
     <string name="title_activity_stat_distribution">StatDistributionActivity</string>
     <string name="cantrip_label_text">Cantrips</string>
     <string name="spell_label_text">Spells</string>
+    <string name="title_activity_creature_generator">CreatureGeneratorActivity</string>
+    <string name="creature_size_string">Size:</string>
+    <string name="size_descriptor_text">ie: Small, medium, large, etc</string>
+    <string name="creature_cr_string">Challenge Rating</string>
+    <string name="title_activity_saved_creature">SavedCreatureActivity</string>
+    <string name="creature_dice_string">Attack Dice</string>
+    <string name="dice_descriptor_text">ie: 1d6, 4d12</string>
+    <string name="creature_ability_string">Abilities</string>
+    <string name="creature_submit_button_string">Create Creature</string>
 
 </resources>

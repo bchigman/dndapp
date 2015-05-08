@@ -126,7 +126,6 @@ public class NewCharActivity extends ActionBarActivity {
         nextPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(v.getContext(), charName.getText().toString() + " : " + classSpinner.getSelectedItem().toString(), Toast.LENGTH_LONG).show();
                 character = new Character(charName.getText().toString());
                 character.set_race(new PlayerRace(raceSpinner.getSelectedItem().toString()));
                 character.get_race().setSubrace(subSpinner.getSelectedItem().toString());

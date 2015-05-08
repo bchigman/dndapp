@@ -1,0 +1,183 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#006699"
+    tools:context="com.project.senior.dndapp.CreatureGeneratorActivity">
+
+    <TextView
+        android:id="@+id/new_creature_banner"
+        android:text="@string/new_creature_string"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="#F0F0F0"
+        android:gravity="center_horizontal" />
+
+    <LinearLayout
+        android:id="@+id/creature_name_row"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/new_creature_banner"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:text="@string/name_form_string"
+            android:textColor="#F0F0F0"
+            android:textSize="20sp"
+            android:layout_margin="5dp"/>
+
+        <EditText
+            android:id="@+id/creature_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".70"
+            android:layout_margin="5dp"
+            android:inputType="text"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/creature_size_row"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/creature_name_row"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:text="@string/creature_size_string"
+            android:textColor="#F0F0F0"
+            android:textSize="20sp"
+            android:layout_margin="5dp"/>
+
+        <EditText
+            android:id="@+id/creature_size"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".70"
+            android:layout_margin="5dp"
+            android:inputType="text"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/creature_size_descriptor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/size_descriptor_text"
+        android:gravity="end"
+        android:textColor="#F0F0F0"
+        android:layout_below="@+id/creature_size_row"/>
+
+    <LinearLayout
+        android:id="@+id/creature_cr_row"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/creature_size_descriptor"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="@string/creature_cr_string"
+            android:textColor="#F0F0F0"
+            android:textSize="20sp"
+            android:layout_margin="5dp"/>
+
+        <EditText
+            android:id="@+id/creature_cr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:layout_margin="5dp"
+            android:inputType="text"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/creature_dice_row"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/creature_cr_row"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:text="@string/creature_dice_string"
+            android:textColor="#F0F0F0"
+            android:textSize="20sp"
+            android:layout_margin="5dp"/>
+
+        <EditText
+            android:id="@+id/creature_dice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".60"
+            android:layout_margin="5dp"
+            android:inputType="text"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/creature_dice_descriptor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dice_descriptor_text"
+        android:gravity="end"
+        android:textColor="#F0F0F0"
+        android:layout_below="@+id/creature_dice_row"/>
+
+    <LinearLayout
+        android:id="@+id/creature_ability_row"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/creature_dice_descriptor"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:text="@string/creature_ability_string"
+            android:textColor="#F0F0F0"
+            android:textSize="20sp"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/creature_abilities"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/creature_ability_row"
+        android:layout_margin="5dp"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/creature_submit_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/creature_submit_button_string"
+        android:layout_gravity="center_horizontal"/>
+
+</RelativeLayout>

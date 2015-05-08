@@ -45,6 +45,14 @@
             android:name=".StatDistributionActivity"
             android:label="@string/title_activity_stat_distribution" >
         </activity>
+        <activity
+            android:name=".CreatureGeneratorActivity"
+            android:label="@string/title_activity_creature_generator" >
+        </activity>
+        <activity
+            android:name=".SavedCreatureActivity"
+            android:label="@string/title_activity_saved_creature" >
+        </activity>
     </application>
 
 </manifest>

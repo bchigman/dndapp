@@ -28,9 +28,6 @@ public class CharacterAdapter extends ArrayAdapter<Character>{
         TextView textView = (TextView) view.findViewById(R.id.character_row_title);
         textView.setText(singleCharacter.get_id() + ") " + singleCharacter.toString());
 
-        TextView desc = (TextView) view.findViewById(R.id.character_row_description);
-        desc.setText(singleCharacter.getStatsArray().toString());
-
         return view;
     }
 

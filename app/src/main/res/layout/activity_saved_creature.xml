@@ -12,17 +12,18 @@
     tools:context="com.project.senior.dndapp.SavedCharacterActivity">
 
     <TextView
-        android:id="@+id/saved_character_text"
+        android:id="@+id/saved_creature_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/saved_char_button_string"
+        android:textColor="#F0F0F0"
+        android:text="@string/saved_creature_button_string"
         android:textSize="20sp"
         android:gravity="center_horizontal" />
 
     <ListView
-        android:id="@+id/character_list_view"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:id="@+id/creature_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
     </ListView>
 

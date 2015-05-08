@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Handler for the DB file of characters
+ * Handler for the DB file of characters and creatures
  * Created by Ben on 5/1/2015.
  */
 
@@ -29,6 +29,13 @@ public class DBHandler extends SQLiteOpenHelper{
     public static final String COLUMN_CLASS = "class";
     public static final String COLUMN_STATS = "stats";
 
+    //Creature fields
+    public static final String TABLE_CREATURES = "creatures";
+    public static final String COLUMN_SIZE = "size";
+    public static final String COLUMN_CR = "cr";
+    public static final String COLUMN_DICE = "dice";
+    public static final String COLUMN_ABILITIES = "abilities";
+
     public DBHandler(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
@@ -44,7 +51,18 @@ public class DBHandler extends SQLiteOpenHelper{
                 COLUMN_CLASS + " TEXT, " +
                 COLUMN_STATS + " TEXT " +
                 ");";
+
+        String creatureQuery = "CREATE TABLE " + TABLE_CREATURES + "("+
+                COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                COLUMN_NAME + " TEXT, " +
+                COLUMN_SIZE + " TEXT, " +
+                COLUMN_CR + " TEXT, " +
+                COLUMN_DICE + " TEXT, " +
+                COLUMN_ABILITIES + " TEXT " +
+                ");";
+
         db.execSQL(query);
+        db.execSQL(creatureQuery);
     }
 
     @Override
@@ -53,7 +71,7 @@ public class DBHandler extends SQLiteOpenHelper{
         onCreate(db);
     }
 
-    //Add new row to db
+    //Add new  chaaracter row to db
     public void addCharacter(Character character){
         ContentValues cv = new ContentValues();
         cv.put(COLUMN_NAME, character.getName());
@@ -67,9 +85,25 @@ public class DBHandler extends SQLiteOpenHelper{
         db.close();
     }
 
+    public void addCreature(Creature creature){
+        SQLiteDatabase db = getWritableDatabase();
+        ContentValues cv = new ContentValues();
+        cv.put(COLUMN_NAME, creature.getName());
+        cv.put(COLUMN_SIZE, creature.getSize());
+        cv.put(COLUMN_CR, creature.getCr());
+        cv.put(COLUMN_DICE, creature.getAttackDice());
+        cv.put(COLUMN_ABILITIES, creature.getAbilities());
+        db.insert(TABLE_CREATURES, null, cv);
+    }
+
     public void deleteCharacter(int charId){
         SQLiteDatabase db = getWritableDatabase();
         db.execSQL("DELETE FROM " + TABLE_CHARACTERS + " WHERE " + COLUMN_ID + "=\"" + charId + "\";");
+    }
+
+    public void deleteCreature(int creatureId){
+        SQLiteDatabase db = getWritableDatabase();
+        db.execSQL("DELETE FROM " + TABLE_CREATURES + " WHERE " + COLUMN_ID + "=\"" + creatureId + "\";");
     }
 
     public void updateCharacter(Character character){
@@ -88,6 +122,7 @@ public class DBHandler extends SQLiteOpenHelper{
     public void dropTable(){
         SQLiteDatabase db = getWritableDatabase();
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_CHARACTERS + ";");
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_CREATURES + ";");
         onCreate(db);
     }
 
@@ -112,6 +147,23 @@ public class DBHandler extends SQLiteOpenHelper{
         return chars;
     }
 
+    public List<Creature> dbToCreatureList(){
+        List<Creature> creatures = new ArrayList<>();
+        SQLiteDatabase db = getWritableDatabase();
+        String query = "SELECT * FROM " + TABLE_CREATURES + " WHERE 1;";
+        Cursor c = db.rawQuery(query, null);
+        c.moveToFirst();
+        while(!c.isAfterLast()){
+            Creature creature = cursorToCreature(c);
+            creatures.add(creature);
+            c.moveToNext();
+        }
+        c.close();
+        db.close();
+
+        return creatures;
+    }
+
     public Character cursorToCharacter(Cursor c){
         int id = (int) c.getLong(0);
         Character character = new Character(c.getString(1));
@@ -131,5 +183,17 @@ public class DBHandler extends SQLiteOpenHelper{
             }
         }
         return character;
+    }
+
+    public Creature cursorToCreature(Cursor c){
+        Creature creature = new Creature();
+        creature.set_id((int) c.getLong(0));
+        creature.setName(c.getString(1));
+        creature.setSize(c.getString(2));
+        creature.setCr((double) c.getLong(3));
+        creature.setAttackDice(c.getString(4));
+        creature.setAbilities(c.getString(5));
+
+        return creature;
     }
 }
