@@ -85,5 +85,7 @@
         <item>Dark Elf (Drow)</item>
     </string-array>
     <string name="title_activity_stat_distribution">StatDistributionActivity</string>
+    <string name="cantrip_label_text">Cantrips</string>
+    <string name="spell_label_text">Spells</string>
 
 </resources>

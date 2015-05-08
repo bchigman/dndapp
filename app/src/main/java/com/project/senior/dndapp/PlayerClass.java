@@ -2,8 +2,6 @@ package com.project.senior.dndapp;
 
 import android.util.Log;
 
-import java.util.ArrayList;
-
 /**
  * PlayerClass Object definition
  * Created by Ben on 4/2/2015.
@@ -18,13 +16,10 @@ public class PlayerClass {
     private String savingThrows;
     private String[] proficiencies;
     private Integer[] recommended;
-    private ArrayList<Integer> statPerks;
-    private ArrayList<String> featPerks;
+    private int[] knownSpells;
 
     public PlayerClass(String name){
         this.className = name;
-        this.statPerks = new ArrayList<>();
-        this.featPerks = new ArrayList<>();
 
         switch(this.className){
             case "Barbarian":
@@ -42,6 +37,7 @@ public class PlayerClass {
                 this.savingThrows = "Dexterity & Constitution";
                 this.proficiencies = new String[]{"Light Armor", "Simple Weapons", "Hand Crossbows", "Longswords", "Rapiers", "Shortswords"};
                 this.recommended = new Integer[]{12, 14, 13, 10, 8, 15};
+                this.knownSpells = new int[]{4, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0};
                 break;
             case "Cleric":
                 this.description = "A priestly champion who wields divine magic in service of a higher power.";
@@ -50,6 +46,7 @@ public class PlayerClass {
                 this.savingThrows = "Wisdom & Charisma";
                 this.proficiencies = new String[]{"Light Armor", "Medium Armor", "Shields", "Simple Weapons"};
                 this.recommended = new Integer[]{14, 12, 13, 10, 15, 8};
+                this.knownSpells = new int[]{-1, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0};
                 break;
             case "Druid":
                 this.description = "A priest of the Old Faith, wielding the powers of nature -- moonlight and plant growth, fire and lightning -- and able to adopt animal forms.";
@@ -59,6 +56,7 @@ public class PlayerClass {
                 this.proficiencies = new String[]{"Light Armor (nonmetal)", "Medium Armor (nonmetal)", "Shields (nonmetal)", "Clubs",
                         "Daggers", "Darts", "Javelins", "Maces", "Quarterstaffs", "Scimitars", "Sickles", "Slings", "Spears"};
                 this.recommended = new Integer[]{10, 8, 14, 13, 15, 12};
+                this.knownSpells = new int[]{-1, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0};
                 break;
             case "Fighter":
                 this.description = "A master of martial combat, skilled with a variety of weapons and armor.";
@@ -67,6 +65,7 @@ public class PlayerClass {
                 this.savingThrows = "Strength & Constitution";
                 this.proficiencies = new String[]{"All Armor", "Shields", "Simple Weapons", "Martial Weapons"};
                 this.recommended = new Integer[]{15, 14, 13, 8, 10, 12};
+                this.knownSpells = new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
                 break;
             case "Monk":
                 this.description = "A master of martial arts, harnessing the power of the body in pursuit of physical and spiritual perfection.";
@@ -83,6 +82,7 @@ public class PlayerClass {
                 this.savingThrows = "Wisdom & Charisma";
                 this.proficiencies = new String[]{"All Armor", "Shields", "Simple Weapons", "Martial Weapons"};
                 this.recommended = new Integer[]{13, 10, 15, 8, 12, 14};
+                this.knownSpells = new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
                 break;
             case "Ranger":
                 this.description = "A warrior who uses martial prowess and nature magic to combat threats on the edges of civilization.";
@@ -91,6 +91,7 @@ public class PlayerClass {
                 this.savingThrows = "Strength & Dexterity";
                 this.proficiencies = new String[]{"Light Armor", "Medium Armor", "Shields", "Simple Weapons", "Martial Weapons"};
                 this.recommended = new Integer[]{ 12, 15, 10, 13, 14, 8};
+                this.knownSpells = new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
                 break;
             case "Rogue":
                 this.description = "A scoundrel who uses stealth and trickery to overcome obstacles and enemies.";
@@ -99,6 +100,7 @@ public class PlayerClass {
                 this.savingThrows = "Dexterity & Intelligence";
                 this.proficiencies = new String[]{"Light Armor", "Simple Weapons", "Hand Crossbows", "Longswords", "Rapiers", "Shortswords"};
                 this.recommended = new Integer[]{12, 15, 13, 14, 8, 10};
+                this.knownSpells = new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
                 break;
             case "Sorcerer":
                 this.description = "A spellcaster who draws on inherent magic from a gift or bloodline";
@@ -107,6 +109,7 @@ public class PlayerClass {
                 this.savingThrows = "Constitution & Charisma";
                 this.proficiencies = new String[]{"Daggers", "Darts", "Slings", "Quarterstaffs", "Light Crossbows"};
                 this.recommended = new Integer[]{10, 8, 14, 12, 13, 15};
+                this.knownSpells = new int[]{2, 4, 2, 0, 0, 0, 0, 0, 0, 0, 0};
                 break;
             case "Warlock":
                 this.description = "A wielder of magic that is derived from a bargain with an extraplanar entity.";
@@ -115,6 +118,7 @@ public class PlayerClass {
                 this.savingThrows = "Wisdom & Charisma";
                 this.proficiencies = new String[]{"Light Armor", "Simple Weapons"};
                 this.recommended = new Integer[]{8, 10, 13, 14, 12, 15};
+                this.knownSpells = new int[]{2, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0};
                 break;
             case "Wizard":
                 this.description = "A scholarly magic-user capable of manipulating the structures of reality.";
@@ -123,6 +127,7 @@ public class PlayerClass {
                 this.savingThrows = "Intelligence & Wisdom";
                 this.proficiencies = new String[]{"Daggers", "Darts", "Slings", "Quarterstaffs", "Light Crossbows"};
                 this.recommended = new Integer[]{8, 10, 12, 15, 14, 13};
+                this.knownSpells = new int[]{-1, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0};
                 break;
             default:
                 Log.i(TAG, "No class like that dummy.");
@@ -151,28 +156,6 @@ public class PlayerClass {
 
     public void setSavingThrows(String savingThrows) {
         this.savingThrows = savingThrows;
-    }
-
-    public ArrayList<Integer> getStatPerks(){
-        return this.statPerks;
-    }
-
-    public void setStatPerks(ArrayList<Integer> statPerks){
-        this.statPerks = new ArrayList<>();
-        for(Integer item : statPerks){
-            this.statPerks.add(item);
-        }
-    }
-
-    public ArrayList<String> getFeatPerks(){
-        return this.featPerks;
-    }
-
-    public void setFeatPerks(ArrayList<String> featPerks){
-        this.featPerks = new ArrayList<>();
-        for(String item : featPerks){
-            this.featPerks.add(item);
-        }
     }
 
     public String getClassName() {
@@ -205,5 +188,13 @@ public class PlayerClass {
 
     public void setRecommended(Integer[] recommended){
         this.recommended = recommended;
+    }
+
+    public int[] getKnownSpells() {
+        return knownSpells;
+    }
+
+    public void setKnownSpells(int[] knownSpells) {
+        this.knownSpells = knownSpells;
     }
 }

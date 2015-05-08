@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:id="@+id/spell_row_group"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants">
+
+        <TextView
+            android:id="@+id/new_char_spell_row_title"
+            android:layout_width="0dp"
+            android:layout_weight=".9"
+            android:layout_height="wrap_content"
+            android:textColor="#F0F0F0"
+            android:layout_marginBottom="5dp"/>
+
+        <CheckBox
+            android:id="@+id/add_checkbox"
+            android:layout_width="0dp"
+            android:layout_weight=".1"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/new_char_spell_row_description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/spell_row_group"/>
+
+</RelativeLayout>

@@ -41,7 +41,6 @@ public class ClassSpinnerListener implements AdapterView.OnItemSelectedListener 
         }catch(Exception e){
             e.printStackTrace(System.err);
         }
-
     }
 
     @Override
@@ -78,7 +77,6 @@ public class ClassSpinnerListener implements AdapterView.OnItemSelectedListener 
                 classSpells = new ArrayList<>();
                 this.spellAdapter.clearAdapter();
                 this.spellAdapter.addAll(this.resetList);
-                //Toast.makeText(parent.getContext(), "nada", Toast.LENGTH_LONG).show();
         }
 
         if(classSpells.size() > 0) {
@@ -100,7 +98,6 @@ public class ClassSpinnerListener implements AdapterView.OnItemSelectedListener 
     public void onNothingSelected(AdapterView<?> parent) {
         this.spellAdapter.clearAdapter();
         this.spellAdapter.addAll(this.resetList);
-        Toast.makeText(parent.getContext(), "nada", Toast.LENGTH_LONG).show();
     }
 
     public SpellAdapter getSpellAdapter() {

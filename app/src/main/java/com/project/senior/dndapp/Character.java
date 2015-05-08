@@ -16,7 +16,7 @@ public class Character {
     private int _currentHitpoints;
     private PlayerClass playerClass;
     private ArrayList<Integer> _statsArray;
-    private ArrayList<Spell> charaterSpells;
+    private ArrayList<Spell> _charaterSpells;
 
     public Character(){
         this._name = "";
@@ -24,7 +24,7 @@ public class Character {
         this._hitpointMax = 10;
         this._currentHitpoints = 10;
         this._statsArray = new ArrayList<>();
-        this.charaterSpells = new ArrayList<>();
+        this._charaterSpells = new ArrayList<>();
         this._race = new PlayerRace("");
     }
 
@@ -34,7 +34,7 @@ public class Character {
         this._hitpointMax = 10;
         this._currentHitpoints = _hitpointMax;
         this._statsArray = new ArrayList<>();
-        this.charaterSpells = new ArrayList<>();
+        this._charaterSpells = new ArrayList<>();
         this._race = new PlayerRace("");
     }
 
@@ -80,11 +80,11 @@ public class Character {
     }
 
     public ArrayList<Spell> getCharaterSpells() {
-        return charaterSpells;
+        return _charaterSpells;
     }
 
     public void setCharaterSpells(ArrayList<Spell> charaterSpells) {
-        this.charaterSpells = charaterSpells;
+        this._charaterSpells = charaterSpells;
     }
 
     public PlayerRace get_race() {
